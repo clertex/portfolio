@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title> Gideon Linggaban </title>
+		<link rel="stylesheet" type="text/css" media="screen" href="mainStyle.css"> 
+		<link rel="icon" href="img/meIconB200X.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+	</head>
+	<body id="body-override">
+		<!-- BANNER -->
+		<div class="download">
+			<img src="img/download.png" id="download" onClick="downloadResume()">
+			<div class="downloadResume1">
+				<span class="title">Resume</span>
+			</div>
+			<div class="downloadResume2">
+				<b class="title">|</b>
+			</div>
+		</div>
+		
+		<section class="container-fluid" id="banner-container">
+			<div class="container-fluid banner"></div>
+			<div class="profile-image">
+				<img src="img/me.png" id="me">
+			</div>
+			<div class="profile-name">
+				<p class="line1">GIDEON DAVIS</p>
+				<p class="line2">LINGGABAN</p>
+				<p class="line3">PROFILE</p>
+			</div>
+		</section>
+
+		<!-- INTRO -->
+		<section id="introduction-container">
+			<span class="intro-head black">A PASSIONATE DESIGNER</span>
+			<p class="intro-description">Hello! I am an artist to the bone and I love any type of designing and/or creative works. I have tried and love doing the following: world building, concept art designing, game designing, graphic designing, video and audio editing, and web designing.</p>
+			<p class="intro-description">And hey! I am also a <color class="blue">web developer</color>.</p>
+			<br>
+			<h1 class="blue" id="interested">INTERESTED?</h1>
+			<p class="clickTheFollowing">Click any of the following:</p>
+		</section>
+		<!-- IMAGE PROJECTOR -->
+		<div class="imgDisplayer" id="imgDisplayer" onClick="displayReset()"><img src="" id="imageProjector"></div>
+
+		<!-- INITIAL CHOICES -->
+		<section class="origin" id="initialChoices-container">
+			<div class="main" id="choicesFluid">
+				<div class="choices" id="skillsChoices">
+					<img src="img/skills.png" class="choiceIcon" 
+					id="iconSkills" onClick="skillsOpen()"><br>
+					<span class="choiceLabel gold">Skills</span>
+				</div>
+				<div class="choices" id="credentialsChoices">
+					<img src="img/credentials.png" class="choiceIcon"
+					id="iconCredentials" onClick="credentialsOpen()"><br>
+					<span class="choiceLabel gold">Credentials</span>
+				</div>
+				<div class="choices" id="pastWorksChoices">
+					<img src="img/work.png" class="choiceIcon"
+					id="iconWorks" onClick="worksOpen()"><br>
+					<span class="choiceLabel gold">Past Works</span>
+				</div>
+				<div class="choices" id="hobbyWorksChoices">
+					<img src="img/hobby.png" class="choiceIcon"
+					id="iconHobbies" onClick="hobbiesOpen()"><br>
+					<span class="choiceLabel gold">Hobby Works</span>
+				</div>
+				<div class="choices" id="contactsChoices">
+					<img src="img/contacts.png" class="choiceIcon"
+					id="iconContacts" onClick="contactsOpen()"><br>
+					<span class="choiceLabel gold">Contacts</span>
+				</div>
+				<div class="choices" id="personalInfoChoices">
+					<img src="img/personalInfo.png" class="choiceIcon"
+					id="iconPersonalInfo" onClick="personalInfoOpen()"><br>
+					<span class="choiceLabel gold">Personal Information</span>
+				</div>
+			</div>
+			<div class="less600" id="choicesFluid">
+				<div class="batch">
+					<div class="choices" id="skillsChoices">
+						<img src="img/skills.png" class="choiceIcon"
+						id="iconSkills" onClick="skillsOpen()"><br>
+						<span class="choiceLabel gold">Skills</span>
+					</div>
+					<div class="choices" id="pastWorksChoices">
+						<img src="img/work.png" class="choiceIcon"
+						id="iconWorks" onClick="worksOpen()"><br>
+						<span class="choiceLabel gold">Past Works</span>
+					</div>
+					<div class="choices" id="contactsChoices">
+						<img src="img/contacts.png" class="choiceIcon"
+						id="iconContacts" onClick="contactsOpen()"><br>
+						<span class="choiceLabel gold">Contacts</span>
+					</div>
+				</div>
+				<div class="batch">
+					<div class="choices" id="credentialsChoices">
+						<img src="img/credentials.png" class="choiceIcon"
+						id="iconCredentials" onClick="credentialsOpen()"><br>
+						<span class="choiceLabel gold">Credentials</span>
+					</div>
+					<div class="choices" id="hobbyWorksChoices">
+						<img src="img/hobby.png" class="choiceIcon"
+						id="iconHobbies" onClick="hobbiesOpen()"><br>
+						<span class="choiceLabel gold">Hobby Works</span>
+					</div>
+					<div class="choices" id="personalInfoChoices">
+						<img src="img/personalInfo.png" class="choiceIcon"
+						id="iconPersonalInfo" onClick="personalInfoOpen()"><br>
+						<span class="choiceLabel gold">Personal Information</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SKILLS SEGMENT -->
+		<section class="skills" id="skills">
+			<div class="showcaseFocus">
+				<img src="img/skills.png" id="skillsIcon" class="icon">
+				<span class="header gold">Skills and Objectives</span>
+			</div>
+			<div class="navigation-icons" id="navigation-icons">
+				<div class="labelDisplay">
+					<span class="labelHover black" id="labelHover">▼ More Over Here ▼</span>
+				</div>
+				<div class="showcaseHolder">
+					<div class="showcase">
+						<img src="img/credentials.png" class="icon" id="scCredentials" onmouseover="changeLabel('Credentials')" onmouseout="resetLabel()" onClick="credentialsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/work.png" class="icon" id="scWorks" onmouseover="changeLabel('Past Works')" onmouseout="resetLabel()" onClick="worksOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/hobby.png" class="icon" id="scHobbies" onmouseover="changeLabel('Hobby Works')" onmouseout="resetLabel()" onClick="hobbiesOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/contacts.png" class="icon" id="scContacts" onmouseover="changeLabel('Contacts')" onmouseout="resetLabel()" onClick="contactsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/personalInfo.png" class="icon" id="scPersonalInfo" onmouseover="changeLabel('Personal Information')" onmouseout="resetLabel()" onClick="personalInfoOpen()"><br>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="fifty-fifty">
+					<div class="left">
+						<img src="img/headTechnicalSkills.png" class="flag"><br>
+						<ul>
+							<li>Programming (PHP, JavaScript, Python, Laravel)</li>
+							<li>Web Designing (HTML, CSS)</li>
+							<li>Graphic Design (Adobe Photoshop, Adobe Illustrator, Medibang Pro Paint)</li>
+							<li>Video Editing (Vegas Pro)</li>
+							<li>Audio Editing (Adobe Audition)</li>
+							<li>Microsoft Office (Word, Excel, Powerpoint)</li>
+							<li>Database Management (Microsoft Access, SQL)</li>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="img/headPersonalSkills.png" class="flag"><br>
+						<ul>
+							<li>Excellent verbal and personal communication skills</li>
+							<li>Leadership</li>
+							<li>Analytical thinking and can work under pressure</li>
+							<li>Creative thinking</li>
+							<li>Excellent writing capabilities</li>
+							<li>Can perform well individually and/or in teams</li>
+							<li>Strong sense of responsibility</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="objectives">
+				<div class="twenty-eighty">
+					<div class="left">
+						<img src="img/blockObjectives.png" class="objectivesIcon">
+					</div>
+					<div class="right">
+						<ul>
+							<li>To seek a carreer where I can grow as a web developer</li>
+							<li>To further enhance my technical skills in the field of information technology</li>
+							<li>To apply my graphic designing skills in a professional settings</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="objectivesless700">
+				<img src="img/objectives.png" class="objectivesless700Icon">
+				<span class="objectivesHeader blue">OBJECTIVES</span>
+				<ul>
+					<li>To seek a carreer where I can grow as a web developer</li>
+					<li>To further enhance my technical skills in the field of information technology</li>
+					<li>To apply my graphic designing skills in a professional settings</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CREDENTIALS SEGMENT -->
+		<section class="credentials" id="credentials">
+			<div class="showcaseFocus">
+				<img src="img/credentials.png" id="skillsIcon" class="icon">
+				<span class="header gold">Credentials</span>
+			</div>
+			<div class="navigation-icons">
+				<div class="labelDisplay">
+					<span class="labelHover black" id="labelHover">▼ More Over Here ▼</span>
+				</div>
+				<div class="showcaseHolder">
+					<div class="showcase">
+						<img src="img/skills.png" class="icon" id="scSkills" onmouseover="changeLabel('Skills')" onmouseout="resetLabel()" onClick="skillsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/work.png" class="icon" id="scWorks" onmouseover="changeLabel('Past Works')" onmouseout="resetLabel()" onClick="worksOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/hobby.png" class="icon" id="scHobbies" onmouseover="changeLabel('Hobby Works')" onmouseout="resetLabel()" onClick="hobbiesOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/contacts.png" class="icon" id="scContacts" onmouseover="changeLabel('Contacts')" onmouseout="resetLabel()" onClick="contactsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/personalInfo.png" class="icon" id="scPersonalInfo" onmouseover="changeLabel('Personal Information')" onmouseout="resetLabel()" onClick="personalInfoOpen()"><br>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div id="workExperience">
+					<div class="credentialHead">
+						<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'workContent', 'credentials', 0)">
+						<img src="img/headWorkExperience.png" id="headerWorkExperience">
+					</div>
+					<div class="workContent collapsible">
+						<div class="ten-ninety">
+							<div class="left">
+								<div class="centricContain">
+									<img src="img/pms.png" class="university" id="pms">
+								</div>
+							</div>
+							<div class="right">
+								<li>Pines Montessori School</li>
+							    <li class="gold">ESL Department</li>
+							    <li>Gibraltar Rd., Baguio City, Benguet</li>
+							    <li>November 2017 - December 2017; March 2018 - April 2018</li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="education">
+					<div class="credentialHead">
+						<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'educationContent', 'credentials', 1)">
+						<img src="img/headEducation.png" id="headerEducation">
+					</div>
+					<div class="educationContent collapsible">
+						<div class="tertiary">
+							<br>
+							<div class="ten-ninety">
+								<div class="left">
+									<div class="centricContain">
+										<img src="img/uc.png" class="university" id="uc">
+									</div>
+								</div>
+								<div class="right">
+									<h4 class="universityHeader">University of the Cordilleras</h4>
+									<div class="fifty-fifty">
+										<div class="left">
+											<li class="gold">Bachelor of Science in Information Technology</li>
+											<li>Web Technology Track</li>
+										</div>
+										<div class="right pad-up">
+											<li>Gov. Pack Rd, Baguio City, Benguet</li>
+											<li>Date of Graduation: December 2021</li>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="ten-ninety">
+								<div class="left">
+									<div class="centricContain">
+										<img src="img/ub.png" class="university" id="ub">
+									</div>
+									
+								</div>
+								<div class="right">
+									<h4 class="universityHeader">University of Baguio</h4>
+									<div class="fifty-fifty">
+										<div class="left">
+											<li class="gold">Associate in Computer Technology</li>
+											<li>Multimedia and Web Design</li>
+										</div>
+										<div class="right pad-up">
+											<li>General Luna Rd., Baguio City, Benguet</li>
+											<li>Date of Graduation: May 2017</li>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="secondary-primary">
+							<img src="img/subheadSecondary.png" class="secondaryIcon">
+							<h4 class="universityHeader">Quezon Hill National High School</h4>
+							<div class="fifty-fifty">
+								<div class="left">
+									<li>First Honorable Mention</li>
+								</div>
+								<div class="right">
+									<li>Upper Quezon Hill, Baguio City, Benguet</li>
+									<li>Date of Graduation: March 2015</li>
+								</div>
+							</div>
+						</div><br>
+						<div class="secondary-primary">
+							<img src="img/subheadPrimary.png" class="primaryIcon">
+							<h4 class="universityHeader">Quezon Hill Elementary School</h4>
+							<div class="fifty-fifty">
+								<div class="left">
+									<li>With Honors</li>
+								</div>
+								<div class="right">
+									<li>Upper Quezon Hill, Baguio City, Benguet</li>
+									<li>Date of Graduation: March 2013</li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="seminars">
+					<div class="credentialHead">
+						<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'seminarContent', 'credentials', 2)">
+						<img src="img/headSeminars.png" id="headerSeminars">
+					</div>
+					<ul class="seminarContent">
+						<li><span class="gold">Brainwave VI </span>| April 20,2017 (University of Baguio)</li>
+						<li><span class="gold">Safety Management in the Workplace </span>| November 5, 2016 (University of Baguio)</li>
+						<li><span class="gold">Guidance for Academic Survival and Excellence </span>| August 11, 2016 (University of Baguio)</li>
+						<li><span class="gold">Laptop Troubleshooting </span>| November 12, 2016 (University of Baguio)</li>
+					</ul>
+				</div>
+				<div id="characterReferences">
+					<div class="credentialHead">
+						<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'referenceContent', 'credentials', 3)">
+						<img src="img/headCharacterReferences.png" id="headerCharacterReferences">
+					</div>
+					<div class="referenceContent">
+						<div class="character">
+							<img src="img/maamAve.png" class="teacher">
+							<ul>
+								<li><span class="gold">Name</span>: Avegale Canipas</li>
+								<li><span class="gold">Position</span>: HR Associate</li>
+								<li><span class="gold">Company</span>: University of Baguio</li>
+								<li><span class="gold">Contact Number</span>: +639333974202</li>
+								<li><span class="gold">Email Address</span>: avegale_canipas@yahoo.com</li>
+							</ul>
+						</div>
+						<div class="character">
+							<img src="img/maamB.png" class="teacher">
+							<ul>
+								<li><span class="gold">Name</span>: Melinda Beninsig</li>
+								<li><span class="gold">Position</span>: IT Department Head</li>
+								<li><span class="gold">Company</span>: University of the Cordilleras</li>
+								<li><span class="gold">Contact Number</span>: (074) 442-3316 local 214</li>
+								<li><span class="gold">Email Address</span>: mel592559@yahoo.com</li>
+							</ul>
+						</div>
+						<div class="character">
+							<img src="img/sisChen.png" class="teacher">
+							<ul>
+								<li><span class="gold">Name</span>: Gretchen Aloda</li>
+								<li><span class="gold">Position</span>: English Teacher</li>
+								<li><span class="gold">Company</span>: JIC Language Tutorial</li>
+								<li><span class="gold">Contact Number</span>: +639452410756</li>
+								<li><span class="gold">Email Address</span>: gretchenaloda411@gmail.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- WORKS SEGMENT -->
+		<section class="works" id="works">
+			<div class="showcaseFocus">
+				<img src="img/work.png" id="worksIcon" class="icon">
+				<span class="header gold">Past Works</span>
+			</div>
+			<div class="navigation-icons">
+				<div class="labelDisplay">
+					<span class="labelHover black" id="labelHover">▼ More Over Here ▼</span>
+				</div>
+				<div class="showcaseHolder">
+					<div class="showcase">
+						<img src="img/skills.png" class="icon" id="scSkills" onmouseover="changeLabel('Skills')" onmouseout="resetLabel()" onClick="skillsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/credentials.png" class="icon" id="sCredentials" onmouseover="changeLabel('Credentials')" onmouseout="resetLabel()" onClick="credentialsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/hobby.png" class="icon" id="scHobbies" onmouseover="changeLabel('Hobby Works')" onmouseout="resetLabel()" onClick="hobbiesOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/contacts.png" class="icon" id="scContacts" onmouseover="changeLabel('Contacts')" onmouseout="resetLabel()" onClick="contactsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/personalInfo.png" class="icon" id="scPersonalInfo" onmouseover="changeLabel('Personal Information')" onmouseout="resetLabel()" onClick="personalInfoOpen()"><br>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="worksHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'logosContent', 'works', 0), displayInitiate('')">
+					<img src="img/headLogos.png" id="headerLogos">
+					<span class="gold" id="logoHover"></span>
+				</div>
+				<div class="logosContent">
+					<div class="logosContente">
+						<div class="innerWrapper">
+							<img src="img/pw/logoA1.png" class="logo" onClick="displayLogo('img/pw/logoA1.png')" onmouseover="displayInitiate('Floating Resto final version')">
+							<img src="img/pw/logoA2.png" class="logo" onClick="displayLogo('img/pw/logoA2.png')" onmouseover="displayInitiate('Floating Resto version 2')">
+							<img src="img/pw/logoA3.png" class="logo" onClick="displayLogo('img/pw/logoA3.png')" onmouseover="displayInitiate('Floating Resto version 1')">
+							<img src="img/pw/logoB.png" class="logo" onClick="displayLogo('img/pw/logoB.png')" onmouseover="displayInitiate('Cordilleran Bikers')">
+							<img src="img/pw/logoC1.png" class="logo" onClick="displayLogo('img/pw/logoC1.png')" onmouseover="displayInitiate('Chronozone version 1')">
+							<img src="img/pw/logoC2.png" class="logo" onClick="displayLogo('img/pw/logoC2.png')" onmouseover="displayInitiate('Chronozone version 2')">
+							<img src="img/pw/logoD1.png" class="logo" onClick="displayLogo('img/pw/logoD1.png')" onmouseover="displayInitiate('Aether prototype 1')">
+							<img src="img/pw/logoD2.png" class="logo" onClick="displayLogo('img/pw/logoD2.png')" onmouseover="displayInitiate('Aether prototype 2')">
+							<img src="img/pw/logoD3.png" class="logo" onClick="displayLogo('img/pw/logoD3.png')" onmouseover="displayInitiate('Aether prototype 3')">
+							<img src="img/pw/logoF1.png" class="logo" onClick="displayLogo('img/pw/logoF1.png')" onmouseover="displayInitiate('Nector prototype dark mode')">
+							<img src="img/pw/logoF2.png" class="logo" onClick="displayLogo('img/pw/logoF2.png')" onmouseover="displayInitiate('Nector prototype light mode')">
+							<img src="img/pw/logoF3.png" class="logo" onClick="displayLogo('img/pw/logoF3.png')" onmouseover="displayInitiate('Nector light mode')">
+							<img src="img/pw/logoF4.png" class="logo" onClick="displayLogo('img/pw/logoF4.png')" onmouseover="displayInitiate('Nector dark mode')">
+							<img src="img/pw/logoG.png" class="logo" onClick="displayLogo('img/pw/logoG.png')" onmouseover="displayInitiate('The Grimoire')">
+							<img src="img/pw/logoH.png" class="logo" onClick="displayLogo('img/pw/logoH.png')" onmouseover="displayInitiate('Local clinic')">
+							<img src="img/pw/logoI.png" class="logo" onClick="displayLogo('img/pw/logoI.png')" onmouseover="displayInitiate('Metropolitan Bible Baptist Ekklesia')">
+							<img src="img/pw/logoJ1.png" class="logo" onClick="displayLogo('img/pw/logoJ1.png')" onmouseover="displayInitiate('Baguio Tech Festival')">
+							<img src="img/pw/logoK.png" class="logo" onClick="displayLogo('img/pw/logoK.png')" onmouseover="displayInitiate('Shape of Hue')">
+						</div>
+					</div>
+					<a href="img/pw/logoE.png" target="new">
+					    <img src="img/pw/logoE.png" class="logoList">
+					</a>
+				</div>
+				<br>
+				<div class="worksHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'webDesignContent', 'works', 1)">
+					<img src="img/headWebDesign.png" id="headerWebDesign">
+					<span class="gold" id="logoHover"></span>
+				</div>
+				<div class="webDesignContent">
+					<div class="webHolder">
+						<span class="gold">Chronozone 1st Iteration</span>
+						<div id="chronozone1" class="carousel slide" data-interval="false">
+						  <ol class="carousel-indicators">
+						    <li data-target="#chronozone1" data-slide-to="0" class="active"></li>
+						    <li data-target="#chronozone1" data-slide-to="1"></li>
+						    <li data-target="#chronozone1" data-slide-to="2"></li>
+						    <li data-target="#chronozone1" data-slide-to="3"></li>
+						    <li data-target="#chronozone1" data-slide-to="4"></li>
+						    <li data-target="#chronozone1" data-slide-to="5"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="item active"><a href="img/pw/proto1.png" target="new"><img src="img/pw/proto1.png"></a></div>
+						    <div class="item"><a href="img/pw/proto2.png" target="new"><img src="img/pw/proto2.png"></a></div>
+						    <div class="item"><a href="img/pw/proto3.png" target="new"><img src="img/pw/proto3.png"></a></div>
+						    <div class="item"><a href="img/pw/proto4.png" target="new"><img src="img/pw/proto4.png"></a></div>
+						    <div class="item"><a href="img/pw/proto5.png" target="new"><img src="img/pw/proto5.png"></a></div>
+						    <div class="item"><a href="img/pw/proto6.png" target="new"><img src="img/pw/proto6.png"></a></div>
+						  </div>
+						  <a class="left carousel-control" href="#chronozone1" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#chronozone1" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+					<div class="webHolder">
+						<span class="gold">Chronozone 2nd Iteration</span>
+						<div id="chronozone2" class="carousel slide" data-interval="false">
+						  <ol class="carousel-indicators">
+						    <li data-target="#chronozone2" data-slide-to="0" class="active"></li>
+						    <li data-target="#chronozone2" data-slide-to="1"></li>
+						    <li data-target="#chronozone2" data-slide-to="2"></li>
+						    <li data-target="#chronozone2" data-slide-to="3"></li>
+						    <li data-target="#chronozone2" data-slide-to="4"></li>
+						    <li data-target="#chronozone2" data-slide-to="5"></li>
+						    <li data-target="#chronozone2" data-slide-to="6"></li>
+						    <li data-target="#chronozone2" data-slide-to="7"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="item active"><a href="img/pw/protoA1.png" target="new"><img src="img/pw/protoA1.png"></a></div>
+						    <div class="item"><a href="img/pw/protoA2.png" target="new"><img src="img/pw/protoA2.png"></a></div>
+						    <div class="item"><a href="img/pw/protoA3.png" target="new"><img src="img/pw/protoA3.png"></a></div>
+						    <div class="item"><a href="img/pw/protoA4.png" target="new"><img src="img/pw/protoA4.png"></a></div>
+						    <div class="item"><a href="img/pw/protoA5.png" target="new"><img src="img/pw/protoA5.png"></a></div>
+						    <div class="item"><a href="img/pw/protoA6.png" target="new"><img src="img/pw/protoA6.png"></a></div>
+						    <div class="item"><a href="img/pw/protoA7.png" target="new"><img src="img/pw/protoA7.png"></a></div>
+						    <div class="item"><a href="img/pw/protoA8.png" target="new"><img src="img/pw/protoA8.png"></a></div>
+						  </div>
+						  <a class="left carousel-control" href="#chronozone2" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#chronozone2" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+					<div class="webHolder">
+						<span class="gold title">Nector</span>
+						<a href="img/pw/protoB.png" target="new"><img src="img/pw/protoB.png" class="webSolo"></a>
+						<span class="gold title">The Grimoire</span>
+						<a href="img/pw/protoC.png" target="new"><img src="img/pw/protoC.png" class="webSolo"></a>
+						<span class="gold title">Baguio Tech Festival</span>
+						<a href="img/pw/protoD.png" target="new"><img src="img/pw/protoD.png" class="webSolo"></a>
+					</div>
+				</div>
+				<br>
+				<div class="worksHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'prototypingContent', 'works', 2)">
+					<img src="img/headPrototyping.png" id="headerPrototyping">
+				</div>
+				<div class="prototypingContent">
+					<div class="sparta">
+						<span class="gold title">SPARTA (Special Protective Augmented Reality Technology Armor)</span>
+						<div class="spartaImages">
+							<div class="helmetSolos">
+								<div class="left">
+									<div class="helmetSolosInner">
+										<a href="img/pw/sparta00.png" target="new">
+											<img src="img/pw/sparta00.png" class="spartaHelmet1 central">
+										</a>
+									</div>
+								</div>
+								<div class="right">
+									<div class="helmetSolosInner">
+										<a href="img/pw/sparta01.png" target="new" class="black">
+											<img src="img/pw/sparta01.png" class="spartaHelmet2 central">
+										</a>
+									</div>
+									<div class="helmetSolosInner">
+										<a href="img/pw/sparta22.gif" target="new">
+											<img src="img/pw/sparta22.gif" class="spartaHelmet3 central">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="helmetCarousels">
+								<div id="sparta1" class="carousel slide" data-ride="carousel">
+									  <ol class="carousel-indicators helmet">
+									    <li data-target="#sparta1" data-slide-to="0" class="active"></li>
+									    <li data-target="#sparta1" data-slide-to="1"></li>
+									    <li data-target="#sparta1" data-slide-to="2"></li>
+									    <li data-target="#sparta1" data-slide-to="3"></li>
+									    <li data-target="#sparta1" data-slide-to="4"></li>
+									    <li data-target="#sparta1" data-slide-to="5"></li>
+									    <li data-target="#sparta1" data-slide-to="6"></li>
+									  </ol>
+									  <div class="carousel-inner">
+									    <div class="item active"><a href="img/pw/sparta11.png" target="new"><img src="img/pw/sparta11.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta12.png" target="new"><img src="img/pw/sparta12.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta13.png" target="new"><img src="img/pw/sparta13.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta14.png" target="new"><img src="img/pw/sparta14.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta15.png" target="new"><img src="img/pw/sparta15.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta16.png" target="new"><img src="img/pw/sparta16.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta17.png" target="new"><img src="img/pw/sparta17.png"></a></div>
+									  </div>
+									  <a class="left carousel-control" href="#sparta1" data-slide="prev">
+									    <span class="glyphicon glyphicon-chevron-left"></span>
+									    <span class="sr-only">Previous</span>
+									  </a>
+									  <a class="right carousel-control" href="#sparta1" data-slide="next">
+									    <span class="glyphicon glyphicon-chevron-right"></span>
+									    <span class="sr-only">Next</span>
+									  </a>
+									</div>
+									<div id="sparta2" class="carousel slide" data-ride="carousel">
+									  <ol class="carousel-indicators helmet">
+									    <li data-target="#sparta2" data-slide-to="0" class="active"></li>
+									    <li data-target="#sparta2" data-slide-to="1"></li>
+									    <li data-target="#sparta2" data-slide-to="2"></li>
+									    <li data-target="#sparta2" data-slide-to="3"></li>
+									  </ol>
+									  <div class="carousel-inner">
+									    <div class="item active"><a href="img/pw/sparta18.png" target="new"><img src="img/pw/sparta18.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta19.png" target="new"><img src="img/pw/sparta19.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta20.png" target="new"><img src="img/pw/sparta20.png"></a></div>
+									    <div class="item"><a href="img/pw/sparta21.png" target="new"><img src="img/pw/sparta21.png"></a></div>
+									  <a class="left carousel-control" href="#sparta2" data-slide="prev">
+									    <span class="glyphicon glyphicon-chevron-left"></span>
+									    <span class="sr-only">Previous</span>
+									  </a>
+									  <a class="right carousel-control" href="#sparta2" data-slide="next">
+									    <span class="glyphicon glyphicon-chevron-right"></span>
+									    <span class="sr-only">Next</span>
+									  </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="chandelground">
+						<span class="gold title">Chandelground</span>
+						<div class="soloContainer">
+							<a href="img/pw/cg00.png" target="new"><img src="img/pw/cg00.png" class="central soloContent"></a>
+						</div>
+						<br><br>
+						<div class="chandelgroundContainer">
+							<div id="chandelgroundCA" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#chandelgroundCA" data-slide-to="0" class="active"></li>
+							    <li data-target="#chandelgroundCA" data-slide-to="1"></li>
+							    <li data-target="#chandelgroundCA" data-slide-to="2"></li>
+							    <li data-target="#chandelgroundCA" data-slide-to="3"></li>
+							    <li data-target="#chandelgroundCA" data-slide-to="4"></li>
+							    <li data-target="#chandelgroundCA" data-slide-to="5"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/cgCA1.png" target="new"><img src="img/pw/cgCA1.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCA2.png" target="new"><img src="img/pw/cgCA2.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCA3.png" target="new"><img src="img/pw/cgCA3.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCA4.png" target="new"><img src="img/pw/cgCA4.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCA5.png" target="new"><img src="img/pw/cgCA5.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCA6.png" target="new"><img src="img/pw/cgCA6.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#chandelgroundCA" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#chandelgroundCA" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+							<br>
+							<div id="chandelgroundCB" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#chandelgroundCB" data-slide-to="0" class="active"></li>
+							    <li data-target="#chandelgroundCB" data-slide-to="1"></li>
+							    <li data-target="#chandelgroundCB" data-slide-to="2"></li>
+							    <li data-target="#chandelgroundCB" data-slide-to="3"></li>
+							    <li data-target="#chandelgroundCB" data-slide-to="4"></li>
+							    <li data-target="#chandelgroundCB" data-slide-to="5"></li>
+							    <li data-target="#chandelgroundCB" data-slide-to="6"></li>
+							    <li data-target="#chandelgroundCB" data-slide-to="7"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/cgCB1.png" target="new"><img src="img/pw/cgCB1.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCB2.png" target="new"><img src="img/pw/cgCB2.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCB3.png" target="new"><img src="img/pw/cgCB3.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCB4.png" target="new"><img src="img/pw/cgCB4.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCB5.png" target="new"><img src="img/pw/cgCB5.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCB6.png" target="new"><img src="img/pw/cgCB6.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCB7.png" target="new"><img src="img/pw/cgCB7.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCB8.png" target="new"><img src="img/pw/cgCB8.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#chandelgroundCB" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#chandelgroundCB" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+						<br>
+						<div class="chandelgroundContainer">
+							<div id="chandelgroundCC" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#chandelgroundCC" data-slide-to="0" class="active"></li>
+							    <li data-target="#chandelgroundCC" data-slide-to="1"></li>
+							    <li data-target="#chandelgroundCC" data-slide-to="2"></li>
+							    <li data-target="#chandelgroundCC" data-slide-to="3"></li>
+							    <li data-target="#chandelgroundCC" data-slide-to="4"></li>
+							    <li data-target="#chandelgroundCC" data-slide-to="5"></li>
+							    <li data-target="#chandelgroundCC" data-slide-to="6"></li>
+							    <li data-target="#chandelgroundCC" data-slide-to="7"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/cgCC1.png" target="new"><img src="img/pw/cgCC1.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCC2.png" target="new"><img src="img/pw/cgCC2.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCC3.png" target="new"><img src="img/pw/cgCC3.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCC4.png" target="new"><img src="img/pw/cgCC4.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCC5.png" target="new"><img src="img/pw/cgCC5.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCC6.png" target="new"><img src="img/pw/cgCC6.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCC7.png" target="new"><img src="img/pw/cgCC7.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCC8.png" target="new"><img src="img/pw/cgCC8.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#chandelgroundCC" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#chandelgroundCC" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+							<br>
+							<div id="chandelgroundCD" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#chandelgroundCD" data-slide-to="0" class="active"></li>
+							    <li data-target="#chandelgroundCD" data-slide-to="1"></li>
+							    <li data-target="#chandelgroundCD" data-slide-to="2"></li>
+							    <li data-target="#chandelgroundCD" data-slide-to="3"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/cgCD1.png" target="new"><img src="img/pw/cgCD1.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCD2.png" target="new"><img src="img/pw/cgCD2.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCD3.png" target="new"><img src="img/pw/cgCD3.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCD4.png" target="new"><img src="img/pw/cgCD4.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#chandelgroundCD" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#chandelgroundCD" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+						<br>
+						<div class="chandelgroundContainer">
+							<div id="chandelgroundCE" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#chandelgroundCE" data-slide-to="0" class="active"></li>
+							    <li data-target="#chandelgroundCE" data-slide-to="1"></li>
+							    <li data-target="#chandelgroundCE" data-slide-to="2"></li>
+							    <li data-target="#chandelgroundCE" data-slide-to="3"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/cgCE1.png" target="new"><img src="img/pw/cgCE1.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCE2.png" target="new"><img src="img/pw/cgCE2.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCE3.png" target="new"><img src="img/pw/cgCE3.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCE4.png" target="new"><img src="img/pw/cgCE4.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#chandelgroundCE" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#chandelgroundCE" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+							<br>
+							<div id="chandelgroundCF" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#chandelgroundCF" data-slide-to="0" class="active"></li>
+							    <li data-target="#chandelgroundCF" data-slide-to="1"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/cgCF1.png" target="new"><img src="img/pw/cgCF1.png"></a></div>
+							    <div class="item"><a href="img/pw/cgF2.png" target="new"><img src="img/pw/cgCF2.png"></a></div>
+
+							  </div>
+							  <a class="left carousel-control" href="#chandelgroundCF" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#chandelgroundCF" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+						<br>
+						<div class="soloContainer">
+							<div id="chandelgroundCG" class="carousel slide central soloContent" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#chandelgroundCG" data-slide-to="0" class="active"></li>
+							    <li data-target="#chandelgroundCG" data-slide-to="1"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/cgCG1.png" target="new"><img src="img/pw/cgCG1.png"></a></div>
+							    <div class="item"><a href="img/pw/cgCG2.png" target="new"><img src="img/pw/cgCG2.png"></a></div>
+
+							  </div>
+							  <a class="left carousel-control" href="#chandelgroundCG" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#chandelgroundCG" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="worksHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'gameDesignContent', 'works', 3)">
+					<img src="img/headGameDesign.png" id="headerGameDesign">
+				</div>
+				<div class="gameDesignContent">
+					<span class="gold title">Shape of Hue</span>
+					<div id="shapeOfHue" class="carousel slide" data-interval="false">
+						  <div class="carousel-inner">
+						    <div class="item active"><a href="img/pw/gg01.png" target="new"><img src="img/pw/gg00.png"></div>
+						    <div class="item"><a href="img/pw/gg02.png" target="new"><img src="img/pw/gg01.png"></a></div>
+						    <div class="item"><a href="img/pw/gg03.png" target="new"><img src="img/pw/gg03.png"></a></div>
+						    <div class="item"><a href="img/pw/gg04.png" target="new"><img src="img/pw/gg04.png"></a></div>
+						    <div class="item"><a href="img/pw/gg05.png" target="new"><img src="img/pw/gg05.png"></a></div>
+						    <div class="item"><a href="img/pw/gg06.png" target="new"><img src="img/pw/gg06.png"></a></div>
+						    <div class="item"><a href="img/pw/gg07.png" target="new"><img src="img/pw/gg07.png"></a></div>
+						    <div class="item"><a href="img/pw/gg08.png" target="new"><img src="img/pw/gg08.png"></a></div>
+						    <div class="item"><a href="img/pw/gg09.png" target="new"><img src="img/pw/gg09.png"></a></div>
+						    <div class="item"><a href="img/pw/gg10.png" target="new"><img src="img/pw/gg10.png"></a></div>
+						    <div class="item"><a href="img/pw/gg11.png" target="new"><img src="img/pw/gg11.png"></a></div>
+						    <div class="item"><a href="img/pw/gg12.png" target="new"><img src="img/pw/gg12.png"></a></div>
+						    <div class="item"><a href="img/pw/gg13.png" target="new"><img src="img/pw/gg13.png"></a></div>
+						    <div class="item"><a href="img/pw/gg14.png" target="new"><img src="img/pw/gg14.png"></a></div>
+						    <div class="item"><a href="img/pw/gg15.png" target="new"><img src="img/pw/gg15.png"></a></div>
+						    <div class="item"><a href="img/pw/gg16.png" target="new"><img src="img/pw/gg16.png"></a></div>
+						    <div class="item"><a href="img/pw/gg17.png" target="new"><img src="img/pw/gg17.png"></a></div>
+						    <div class="item"><a href="img/pw/gg18.png" target="new"><img src="img/pw/gg18.png"></a></div>
+						    <div class="item"><a href="img/pw/gg19.png" target="new"><img src="img/pw/gg19.png"></a></div>
+						    <div class="item"><a href="img/pw/gg20.png" target="new"><img src="img/pw/gg20.png"></a></div>
+						    <div class="item"><a href="img/pw/gg21.png" target="new"><img src="img/pw/gg21.png"></a></div>
+						    <div class="item"><a href="img/pw/gg22.png" target="new"><img src="img/pw/gg22.png"></a></div>
+						  </div>
+						  <a class="left carousel-control" href="#shapeOfHue" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#shapeOfHue" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+					</div>
+					<br>
+					<span class="gold title">Monopoly Baguio Version</span>
+					<div class="monopolyContainer">
+						<a href="img/pw/monopolyBaguio.png" target="new"><img src="img/pw/monopolyBaguio.png" class="monopoly" id="monopolyBoard"></a>
+						<img src="img/rotate1.png" id="flip" onClick="rotate()">
+					</div>
+					
+					<div class="deedsContent">
+						<div class="innerWrapper">
+							<img src="img/pw/TD1M01.png" class="logo" onClick="displayDeeds('img/pw/TD1M01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1M02.png" class="logo" onClick="displayDeeds('img/pw/TDM021.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1M03.png" class="logo" onClick="displayDeeds('img/pw/TD1M03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1M04.png" class="logo" onClick="displayDeeds('img/pw/TD1M04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1B01.png" class="logo" onClick="displayDeeds('img/pw/TD1B01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1B02.png" class="logo" onClick="displayDeeds('img/pw/TD1B02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1B03.png" class="logo" onClick="displayDeeds('img/pw/TD1B03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1B04.png" class="logo" onClick="displayDeeds('img/pw/TD1B04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1B05.png" class="logo" onClick="displayDeeds('img/pw/TD1B05.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1B06.png" class="logo" onClick="displayDeeds('img/pw/TD1B06.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1O01.png" class="logo" onClick="displayDeeds('img/pw/TD1O01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1O02.png" class="logo" onClick="displayDeeds('img/pw/TD1O02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1O03.png" class="logo" onClick="displayDeeds('img/pw/TD1O03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1O04.png" class="logo" onClick="displayDeeds('img/pw/TD1O04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1O05.png" class="logo" onClick="displayDeeds('img/pw/TD1O05.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1O06.png" class="logo" onClick="displayDeeds('img/pw/TD1O06.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1R01.png" class="logo" onClick="displayDeeds('img/pw/TD1R01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1R02.png" class="logo" onClick="displayDeeds('img/pw/TD1R02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1R03.png" class="logo" onClick="displayDeeds('img/pw/TD1R03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1R04.png" class="logo" onClick="displayDeeds('img/pw/TD1R04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1R05.png" class="logo" onClick="displayDeeds('img/pw/TD1R05.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1R06.png" class="logo" onClick="displayDeeds('img/pw/TD1R06.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1L01.png" class="logo" onClick="displayDeeds('img/pw/TD1L01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1L02.png" class="logo" onClick="displayDeeds('img/pw/TD1L02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1L03.png" class="logo" onClick="displayDeeds('img/pw/TD1L03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1L04.png" class="logo" onClick="displayDeeds('img/pw/TD1L04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1L05.png" class="logo" onClick="displayDeeds('img/pw/TD1L05.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1L06.png" class="logo" onClick="displayDeeds('img/pw/TD1L06.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1Y01.png" class="logo" onClick="displayDeeds('img/pw/TD1Y01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1Y02.png" class="logo" onClick="displayDeeds('img/pw/TD1Y02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1Y03.png" class="logo" onClick="displayDeeds('img/pw/TD1Y03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1Y04.png" class="logo" onClick="displayDeeds('img/pw/TD1Y04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1Y05.png" class="logo" onClick="displayDeeds('img/pw/TD1Y05.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1Y06.png" class="logo" onClick="displayDeeds('img/pw/TD1Y06.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1G01.png" class="logo" onClick="displayDeeds('img/pw/TD1G01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1G02.png" class="logo" onClick="displayDeeds('img/pw/TD1G02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1G03.png" class="logo" onClick="displayDeeds('img/pw/TD1G03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1G04.png" class="logo" onClick="displayDeeds('img/pw/TD1G04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1G05.png" class="logo" onClick="displayDeeds('img/pw/TD1G05.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1G06.png" class="logo" onClick="displayDeeds('img/pw/TD1G06.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1V01.png" class="logo" onClick="displayDeeds('img/pw/TD1V01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1V02.png" class="logo" onClick="displayDeeds('img/pw/TD1V02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1V03.png" class="logo" onClick="displayDeeds('img/pw/TD1V03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1V04.png" class="logo" onClick="displayDeeds('img/pw/TD1V04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1U01.png" class="logo" onClick="displayDeeds('img/pw/TD1U01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1U02.png" class="logo" onClick="displayDeeds('img/pw/TD1U02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1U03.png" class="logo" onClick="displayDeeds('img/pw/TD1U03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1U04.png" class="logo" onClick="displayDeeds('img/pw/TD1U04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S01.png" class="logo" onClick="displayDeeds('img/pw/TD1S01.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S02.png" class="logo" onClick="displayDeeds('img/pw/TD1S02.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S03.png" class="logo" onClick="displayDeeds('img/pw/TD1S03.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S04.png" class="logo" onClick="displayDeeds('img/pw/TD1S04.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S05.png" class="logo" onClick="displayDeeds('img/pw/TD1S05.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S06.png" class="logo" onClick="displayDeeds('img/pw/TD1S06.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S07.png" class="logo" onClick="displayDeeds('img/pw/TD1S07.png')" onmouseover="displayReload()">
+							<img src="img/pw/TD1S08.png" class="logo" onClick="displayDeeds('img/pw/TD1S08.png')" onmouseover="displayReload()">
+						</div>
+					</div>
+					<div class="cardsContent">
+						<div class="innerWrapper">
+							<img src="img/pw/CHX.png" class="logo" onClick="displayCards('img/pw/CHX.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH01.png" class="logo" onClick="displayCards('img/pw/CH01.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH02.png" class="logo" onClick="displayCards('img/pw/CH02.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH03.png" class="logo" onClick="displayCards('img/pw/CH03.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH04.png" class="logo" onClick="displayCards('img/pw/CH04.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH05.png" class="logo" onClick="displayCards('img/pw/CH05.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH06.png" class="logo" onClick="displayCards('img/pw/CH06.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH07.png" class="logo" onClick="displayCards('img/pw/CH07.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH08.png" class="logo" onClick="displayCards('img/pw/CH08.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH09.png" class="logo" onClick="displayCards('img/pw/CH09.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH10.png" class="logo" onClick="displayCards('img/pw/CH10.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH11.png" class="logo" onClick="displayCards('img/pw/CH11.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH12.png" class="logo" onClick="displayCards('img/pw/CH12.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH13.png" class="logo" onClick="displayCards('img/pw/CH13.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH14.png" class="logo" onClick="displayCards('img/pw/CH14.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH15.png" class="logo" onClick="displayCards('img/pw/CH15.png')" onmouseover="displayReload()">
+							<img src="img/pw/CH16.png" class="logo" onClick="displayCards('img/pw/CH16.png')" onmouseover="displayReload()">
+							<img src="img/pw/CCX.png" class="logo" onClick="displayCards('img/pw/CCX.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC01.png" class="logo" onClick="displayCards('img/pw/CC01.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC02.png" class="logo" onClick="displayCards('img/pw/CC02.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC03.png" class="logo" onClick="displayCards('img/pw/CC03.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC04.png" class="logo" onClick="displayCards('img/pw/CC04.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC05.png" class="logo" onClick="displayCards('img/pw/CC05.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC06.png" class="logo" onClick="displayCards('img/pw/CC06.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC07.png" class="logo" onClick="displayCards('img/pw/CC07.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC08.png" class="logo" onClick="displayCards('img/pw/CC08.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC09.png" class="logo" onClick="displayCards('img/pw/CC09.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC10.png" class="logo" onClick="displayCards('img/pw/CC10.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC11.png" class="logo" onClick="displayCards('img/pw/CC11.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC12.png" class="logo" onClick="displayCards('img/pw/CC12.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC13.png" class="logo" onClick="displayCards('img/pw/CC13.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC14.png" class="logo" onClick="displayCards('img/pw/CC14.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC15.png" class="logo" onClick="displayCards('img/pw/CC15.png')" onmouseover="displayReload()">
+							<img src="img/pw/CC16.png" class="logo" onClick="displayCards('img/pw/CC16.png')" onmouseover="displayReload()">
+						</div>
+					</div>
+					<div class="moneyContent">
+						<div class="innerWrapper">
+							<img src="img/pw/m1.png" class="logo m1" onClick="displayCardsW('img/pw/m1.png', 'white')" onmouseover="displayReload()">
+							<img src="img/pw/m5.png" class="logo m5" onClick="displayCardsW('img/pw/m5.png', '#C69054')" onmouseover="displayReload()">
+							<img src="img/pw/m10.png" class="logo m10" onClick="displayCardsW('img/pw/m10.png', '#D17878')" onmouseover="displayReload()">
+							<img src="img/pw/m20.png" class="logo m20" onClick="displayCardsW('img/pw/m20.png', '#94AC96')" onmouseover="displayReload()">
+							<img src="img/pw/m50.png" class="logo m50" onClick="displayCardsW('img/pw/m50.png', '#9680DB')" onmouseover="displayReload()">
+							<img src="img/pw/m100.png" class="logo m100" onClick="displayCardsW('img/pw/m100.png', '#73C654')" onmouseover="displayReload()">
+							<img src="img/pw/m200.png" class="logo m200" onClick="displayCardsW('img/pw/m200.png', '#D1BE67')" onmouseover="displayReload()">
+							<img src="img/pw/m500.png" class="logo m500" onClick="displayCardsW('img/pw/m500.png', '#5A8BB4')" onmouseover="displayReload()">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="worksHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'applicationDesignContent', 'works', 4)">
+					<img src="img/headApplicationDesign.png" id="headerApplication">
+				</div>
+				<div class="applicationDesignContent">
+					<div class="applicationsContainer">
+						<div class="nectorApp">
+							<span class="gold title">Nector</span>
+							<div id="nector" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#nector" data-slide-to="0" class="active"></li>
+							    <li data-target="#nector" data-slide-to="1"></li>
+							    <li data-target="#nector" data-slide-to="2"></li>
+							    <li data-target="#nector" data-slide-to="3"></li>
+							    <li data-target="#nector" data-slide-to="4"></li>
+							    <li data-target="#nector" data-slide-to="5"></li>
+							    <li data-target="#nector" data-slide-to="5"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/nectorA1.png" target="new"><img src="img/pw/nectorA1.png"></a></div>
+							    <div class="item"><a href="img/pw/nectorA2.png" target="new"><img src="img/pw/nectorA1.png"></a></div>
+							    <div class="item"><a href="img/pw/nectorB1.png" target="new"><img src="img/pw/nectorB1.png"></a></div>
+							    <div class="item"><a href="img/pw/nectorB2.png" target="new"><img src="img/pw/nectorB2.png"></a></div>
+							    <div class="item"><a href="img/pw/nectorB3.png" target="new"><img src="img/pw/nectorB3.png"></a></div>
+							    <div class="item"><a href="img/pw/nectorB4.png" target="new"><img src="img/pw/nectorB4.png"></a></div>
+							    <div class="item"><a href="img/pw/nectorC1.png" target="new"><img src="img/pw/nectorC1.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#nector" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#nector" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+						<div class="greenLogApp">
+							<span class="gold title">Green Log</span>
+							<div id="greenLog" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#greenLog" data-slide-to="0" class="active"></li>
+							    <li data-target="#greenLog" data-slide-to="1"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/pw/app1.png" target="new"><img src="img/pw/app1.png"></a></div>
+							    <div class="item"><a href="img/pw/app2.png" target="new"><img src="img/pw/app2.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#greenLog" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#greenLog" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+					</div>
+					<div class="thirty-thirty-thirty">
+						<div class="left">
+							<video width="100%" auto controls poster="">
+							  <source src="vids/nectorA1.mp4" type="video/mp4">
+							</video>
+
+						</div>
+						<div class="middle">
+							<video width="100%" controls>
+							  <source src="vids/nectorA2.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="right">
+							<video width="100%" controls>
+							  <source src="vids/nectorA3.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+					<div class="thirty-thirty-thirty">
+						<div class="left">
+							<video width="100%" controls>
+							  <source src="vids/nectorA4.mp4" type="video/mp4">
+							</video>
+
+						</div>
+						<div class="middle">
+							<video width="100%" controls>
+							  <source src="vids/nectorA5.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="right">
+							<video width="100%" controls>
+							  <source src="vids/nectorA6.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="worksHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'otherGraphicsContent', 'works', 5)">
+					<img src="img/headOtherGraphics.png" id="headerOtherGraphics">
+				</div>
+				<div class="otherGraphicsContent">
+					<span class="gold title">Commemoration Kids Badges</span>
+					<div class="badgesContainer">
+						<div class="badgeDiv"><img src="img/pw/badgeA1.png" class="badges" onClick="displayLogo('img/pw/badgeA1.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA2.png" class="badges" onClick="displayLogo('img/pw/badgeA2.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA3.png" class="badges" onClick="displayLogo('img/pw/badgeA3.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA4.png" class="badges" onClick="displayLogo('img/pw/badgeA4.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA5.png" class="badges" onClick="displayLogo('img/pw/badgeA5.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA6.png" class="badges" onClick="displayLogo('img/pw/badgeA6.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA7.png" class="badges" onClick="displayLogo('img/pw/badgeA7.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA8.png" class="badges" onClick="displayLogo('img/pw/badgeA8.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA9.png" class="badges" onClick="displayLogo('img/pw/badgeA9.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA10.png" class="badges" onClick="displayLogo('img/pw/badgeA10.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA11.png" class="badges" onClick="displayLogo('img/pw/badgeA11.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA12.png" class="badges" onClick="displayLogo('img/pw/badgeA12.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA13.png" class="badges" onClick="displayLogo('img/pw/badgeA13.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeA14.png" class="badges" onClick="displayLogo('img/pw/badgeA14.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB1.png" class="badges" onClick="displayLogo('img/pw/badgeB1.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB2.png" class="badges" onClick="displayLogo('img/pw/badgeB2.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB3.png" class="badges" onClick="displayLogo('img/pw/badgeB3.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB4.png" class="badges" onClick="displayLogo('img/pw/badgeB4.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB5.png" class="badges" onClick="displayLogo('img/pw/badgeB5.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB6.png" class="badges" onClick="displayLogo('img/pw/badgeB6.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB7.png" class="badges" onClick="displayLogo('img/pw/badgeB7.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB8.png" class="badges" onClick="displayLogo('img/pw/badgeB8.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB9.png" class="badges" onClick="displayLogo('img/pw/badgeB9.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB10.png" class="badges" onClick="displayLogo('img/pw/badgeB10.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB11.png" class="badges" onClick="displayLogo('img/pw/badgeB11.png')" onmouseover="displayReload()"></div>
+						<div class="badgeDiv"><img src="img/pw/badgeB12.png" class="badges" onClick="displayLogo('img/pw/badgeB12.png')" onmouseover="displayReload()"></div>
+					</div>
+					<br>
+					<span class="gold title">High School Graduation Graphics</span>
+					<div class="hsGrad">
+						<div class="left">
+							<a href="img/pw/grad1.png" target="new"><img src="img/pw/grad1.png" class="hsGrad"></a>
+							<a href="img/pw/grad3.png" target="new"><img src="img/pw/grad3.png" class="hsGrad"></a>
+						</div>
+						<div class="right">
+							<a href="img/pw/grad2.png" target="new"><img src="img/pw/grad2.png" class="hsGrad"></a>
+						</div>
+					</div>
+					<br>
+					<span class="gold title">Birthday Frames</span>
+					<div class="bdayFrames">
+						<div class="left">
+							<img src="img/pw/bday13.png" class="bdayFrameImg" id="frameProjector">
+						</div>
+						<div class="right">
+							<div class="innerWrapper">
+								<div class="r-row">
+									<div class="iconic"><img src="img/pw/bday13.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday13.png')"></div>
+									<div class="iconic"><img src="img/pw/bday1.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday1.png')"></div>
+									<div class="iconic"><img src="img/pw/bday2.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday2.png')"></div>
+									<div class="iconic"><img src="img/pw/bday3.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday3.png')"></div>
+									<div class="iconic"><img src="img/pw/bday12.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday12.png')"></div>
+									<div class="iconic"><img src="img/pw/bday14.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday14.png')"></div>
+									<div class="iconic"><img src="img/pw/bday25.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday25.png')"></div>
+								</div><br class="bdayBreak">
+								<div class="r-row">
+									<div class="iconic"><img src="img/pw/bday4.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday4.png')"></div>
+									<div class="iconic"><img src="img/pw/bday5.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday5.png')"></div>
+									<div class="iconic"><img src="img/pw/bday6.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday6.png')"></div>
+									<div class="iconic"><img src="img/pw/bday7.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday7.png')"></div>
+									<div class="iconic"><img src="img/pw/bday19.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday19.png')"></div>
+									<div class="iconic"><img src="img/pw/bday20.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday20.png')"></div>
+									<div class="iconic"><img src="img/pw/bday26.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday26.png')"></div>
+								</div><br class="bdayBreak">	
+								<div class="r-row">
+									<div class="iconic"><img src="img/pw/bday8.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday8.png')"></div>
+									<div class="iconic"><img src="img/pw/bday9.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday9.png')"></div>
+									<div class="iconic"><img src="img/pw/bday10.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday10.png')"></div>
+									<div class="iconic"><img src="img/pw/bday11.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday11.png')"></div>
+									<div class="iconic"><img src="img/pw/bday21.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday21.png')"></div>
+									<div class="iconic"><img src="img/pw/bday22.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday22.png')"></div>
+									<div class="iconic"><img src="img/pw/bday27.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday27.png')"></div>
+								</div><br class="bdayBreak">
+								<div class="r-row">
+									<div class="iconic"><img src="img/pw/bday12.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday12.png')"></div>
+									<div class="iconic"><img src="img/pw/bday14.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday14.png')"></div>
+									<div class="iconic"><img src="img/pw/bday15.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday15.png')"></div>
+									<div class="iconic"><img src="img/pw/bday16.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday16.png')"></div>
+									<div class="iconic"><img src="img/pw/bday23.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday23.png')"></div>
+									<div class="iconic"><img src="img/pw/bday24.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday24.png')"></div>
+									<div class="iconic"><img src="img/pw/bday28.png" class="bdayFrameImg" onmouseover="displayBdayFrame('img/pw/bday28.png')"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<span class="gold title">Certificates</span>
+					<div class="certificates">
+						<div class="left"><a href="img/pw/cert2.png" target="new"><img src="img/pw/cert2.png"></a></div>
+						<div class="right"><a href="img/pw/cert1.png" target="new"><img src="img/pw/cert1.png"></a></div>
+					</div>
+					<br>
+					<span class="gold title">Others</span>
+					<div class="otherGraphicsContainer">
+						<div class="fifty-fifty">
+							<div class="left">
+								<a href="img/pw/yeartheme2019.png" target="new"><img src="img/pw/yeartheme2019.png" class="otherGraphics"></a>
+								<a href="img/pw/yugiInvitation.png" target="new"><img src="img/pw/yugiInvitation.png" class="otherGraphics"></a>
+							</div>
+							<div class="right">
+								<a href="img/pw/yeartheme2021.png" target="new"><img src="img/pw/yeartheme2021.png" class="otherGraphics"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="worksHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'videosContent', 'works', 6)">
+					<img src="img/headVideos.png" id="headerVideos">
+				</div>
+				<div class="videosContent">
+					<br>
+					<span class="gold title">Music Lyrics Videos</span>
+					<div class="fifty-fifty">
+						<div class="left">
+							<iframe class="videoSize" src="https://www.youtube.com/embed/sgzuQiK-Y6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe class="videoSize" src="https://www.youtube.com/embed/yW6ntmus48c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe class="videoSize" src="https://www.youtube.com/embed/DrpaMBXt3Ts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="right">
+							<iframe class="videoSize" src="https://www.youtube.com/embed/iZa9Xbr2ZCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe class="videoSize" src="https://www.youtube.com/embed/3mbawVjSohk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						</div>
+					</div><br>
+					<span class="gold title">Game Guide: Shape of Hue</span>
+					<div class="fifty-fifty">
+						<div class="left">
+							<iframe class="videoSize" src="https://www.youtube.com/embed/z5msz2iCUHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="right">
+							
+						</div>
+					</div><br>
+					<span class="gold title">Others</span>
+					<div class="fifty-fifty">
+						<div class="left">
+							<iframe class="videoSize" src="https://www.youtube.com/embed/B4NQk4n3JWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="right">
+							<iframe class="videoSize" src="https://www.youtube.com/embed/CF9Fd4u-Q9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<!-- HOBBIES SEGMENT -->
+		<section class="hobbies" id="hobbies">
+			<div class="showcaseFocus">
+				<img src="img/hobby.png" id="skillsIcon" class="icon">
+				<span class="header gold">Hobby Works</span>
+			</div>
+			<div class="navigation-icons">
+				<div class="labelDisplay">
+					<span class="labelHover black" id="labelHover">▼ More Over Here ▼</span>
+				</div>
+				<div class="showcaseHolder">
+					<div class="showcase">
+						<img src="img/skills.png" class="icon" id="scSkills" onmouseover="changeLabel('Skills')" onmouseout="resetLabel()" onClick="skillsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/credentials.png" class="icon" id="scCredentials" onmouseover="changeLabel('Credentials')" onmouseout="resetLabel()" onClick="credentialsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/work.png" class="icon" id="scWorks" onmouseover="changeLabel('Past Works')" onmouseout="resetLabel()" onClick="worksOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/contacts.png" class="icon" id="scContacts" onmouseover="changeLabel('Contacts')" onmouseout="resetLabel()" onClick="contactsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/personalInfo.png" class="icon" id="scPersonalInfo" onmouseover="changeLabel('Personal Information')" onmouseout="resetLabel()" onClick="personalInfoOpen()"><br>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="hobbiesHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'worldBuildingContent', 'hobbies', 0)">
+					<img src="img/headWorldBuilding.png" id="headerWorldBuilding">
+					<span class="gold" id="logoHover"></span>
+				</div>
+				<div class="worldBuildingContent">
+					<a href="img/hw/avineaMap.jpg" target="new"><img src="img/hw/avineaMap.jpg" class="mapa central"></a>
+					<div class="fifty-fifty">
+						<div class="left">
+							<a href="img/hw/avineaResearcher.png" target="new"><img src="img/hw/avineaResearcher.png" class="worldBuildingContent"></a>
+							<a href="img/hw/avineaSoldier.png" target="new"><img src="img/hw/avineaSoldier.png" class="worldBuildingContent"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/avineaScout.png" target="new"><img src="img/hw/avineaScout.png" class="worldBuildingContent"></a>
+							<a href="img/hw/avineaSpecialHybrids.png" target="new"><img src="img/hw/avineaSpecialHybrids.png" class="worldBuildingContent"></a>
+						</div>
+					</div>
+					<div class="soloContainer">
+						<img src="img/hw/avineaAffinities.png" class="central soloContent">
+					</div>
+				</div>
+				<br>
+				<div class="hobbiesHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'characterSheetsContent', 'hobbies', 1)">
+					<img src="img/headCharacterSheets.png" id="headerCharacterSheets">
+					<span class="gold" id="logoHover"></span>
+				</div>
+				<div class="characterSheetsContent">
+					<div class="sixty-fourty">
+						<div class="left">
+							<div id="galvarosA" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators characterSheet">
+							    <li data-target="#galvarosA" data-slide-to="0" class="active"></li>
+							    <li data-target="#galvarosA" data-slide-to="1"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/hw/galvaA1.png" target="new">
+							    	<img src="img/hw/galvaA1.png"></a></div>
+							    <div class="item"><a href="img/hw/galvaA2.png" target="new"><img src="img/hw/galvaA2.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#galvarosA" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#galvarosA" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+						<div class="right">
+							<div id="galvarosB" class="carousel slide" data-interval="false">
+							  <ol class="carousel-indicators characterSheet">
+							    <li data-target="#galvarosB" data-slide-to="0" class="active"></li>
+							    <li data-target="#galvarosB" data-slide-to="1"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="item active"><a href="img/hw/galvaB1.png" target="new"><img src="img/hw/galvaB1.png"></a></div>
+							    <div class="item"><a href="img/hw/galvaB2.png" target="new"><img src="img/hw/galvaB2.png"></a></div>
+							  </div>
+							  <a class="left carousel-control" href="#galvarosB" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#galvarosB" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>	
+					</div>
+					<div class="fifty-fifty">
+						<div class="left">
+							<a href="img/hw/renderA.png" target="new"><img src="img/hw/renderA.png" class="render"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/renderB.png" target="new"><img src="img/hw/renderB.png" class="render"></a>
+						</div>
+					</div>
+					<div class="fifty-fifty">
+						<div class="left">
+							<a href="img/hw/renderC1.png" target="new"><img src="img/hw/renderC1.png" class="render"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/renderC2.png" target="new"><img src="img/hw/renderC2.png" class="render"></a>
+						</div>
+					</div>
+					<div class="fifty-fifty">
+						<div class="left">
+							<a href="img/hw/renderC3.png" target="new"><img src="img/hw/renderC3.png" class="render"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/renderF.png" target="new"><img src="img/hw/renderF.png" class="render"></a>
+						</div>
+					</div>
+					<div class="fiftyfive-fourtyfive">
+						<div class="left">
+							<a href="img/hw/renderE.png" target="new"><img src="img/hw/renderE.png" class="render"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/renderD.png" target="new"><img src="img/hw/renderD.png" class="render"></a>
+						</div>
+					</div>
+					<div class="soloContainer">
+						<a href="img/hw/renderG.png" target="new"><img src="img/hw/renderG.png" class="central soloContent"></a>
+					</div>
+					<div class="fifty-fifty">
+						<div class="left">
+							<a href="img/hw/rhythmA.png" target="new"><img src="img/hw/rhythmA.png" class="render"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/rhythmB.png" target="new"><img src="img/hw/rhythmB.png" class="render"></a>
+						</div>
+					</div>
+					<div class="soloContainer">
+						<a href="img/hw/eloel1.png" target="new"><img src="img/hw/eloel1.png" class="central soloContent"></a>
+					</div>
+					<div class="soloContainer">
+						<a href="img/hw/archson.png" target="new"><img src="img/hw/archson.png" class="central soloContent"></a>
+					</div>
+				</div>		
+				<br>
+				<div class="hobbiesHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'fanArtContent', 'hobbies', 2)">
+					<img src="img/headPaladins.png" id="headerPaladins">
+					<span class="gold" id="logoHover"></span>
+				</div>
+				<div class="fanArtContent">
+					<div class="left">
+						<a href="img/hw/dambaA1.png" target="new"><img src="img/hw/dambaA1.png" class="paladins"></a>
+						<a href="img/hw/dambaA5.png" target="new"><img src="img/hw/dambaA5.png" class="paladins"></a>
+					</div>
+					<div class="right">
+						<a href="img/hw/dambaA2.png" target="new"><img src="img/hw/dambaA2.png" class="paladins"></a>
+						<div id="damba" class="carousel slide" data-interval="false">
+						  <ol class="carousel-indicators characterSheet">
+						    <li data-target="#damba" data-slide-to="0" class="active"></li>
+						    <li data-target="#damba" data-slide-to="1"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="item active"><a href="img/hw/dambaA3.png" target="new"><img src="img/hw/dambaA3.png"></a></div>
+						    <div class="item"><a href="img/hw/dambaA4.png" target="new"><img src="img/hw/dambaA4.png"></a></div>
+						  </div>
+						  <a class="left carousel-control" href="#damba" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#damba" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<a href="img/hw/adultTalus.png" target="new"><img src="img/hw/adultTalus.png" class="paladins talus"></a>
+					</div>
+					<img src="img/hw/grover.png" class="paladins equalized">
+					<div id="oddieBell" class="carousel slide central" data-interval="false">
+						  <ol class="carousel-indicators characterSheet">
+						    <li data-target="#oddieBell" data-slide-to="0" class="active"></li>
+						    <li data-target="#oddieBell" data-slide-to="1"></li>
+						    <li data-target="#oddieBell" data-slide-to="2"></li>
+						    <li data-target="#oddieBell" data-slide-to="3"></li>
+						    <li data-target="#oddieBell" data-slide-to="4"></li>
+						    <li data-target="#oddieBell" data-slide-to="5"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="item active"><img src="img/hw/oddieBell1.png"></div>
+						    <div class="item"><img src="img/hw/oddieBell2.png"></div>
+						    <div class="item"><img src="img/hw/oddieBell3.png"></div>
+						    <div class="item"><img src="img/hw/oddieBell4.png"></div>
+						    <div class="item"><img src="img/hw/oddieBell5.png"></div>
+						    <div class="item"><img src="img/hw/oddieBell6.png"></div>
+						  </div>
+						  <a class="left carousel-control" href="#oddieBell" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#oddieBell" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>	
+				</div>
+				<br>
+				<div class="hobbiesHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'uncategorizedContent', 'hobbies', 3)">
+					<img src="img/headUncategorized.png" id="headerUncategorized">
+					<span class="gold" id="logoHover"></span>
+				</div>
+				<div class="uncategorizedContent">
+					<div class="thirty-thirty-thirty">
+						<div class="left">
+							<a href="img/hw/galvaC1.png" target="new"><img src="img/hw/galvaC1.png" class="uncategorized"></a>
+						</div>
+						<div class="middle">
+							<a href="img/hw/galvaC2.png" target="new"><img src="img/hw/galvaC2.png" class="uncategorized"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/garvalon.png" target="new"><img src="img/hw/garvalon.png" class="uncategorized"></a>
+						</div>
+					</div>
+					<a href="img/hw/galvaD.png" target="new"><img src="img/hw/galvaD.png" class="uncategorized"></a>
+					<br><br>
+					<a href="img/hw/renderX4.png" target="new"><img src="img/hw/renderX4.png" class="uncategorized"></a>
+					<br><br>
+					<a href="img/hw/renderX2.png" target="new"><img src="img/hw/renderX2.png" class="uncategorized"></a>
+					<br><br>
+					<a href="img/hw/eloel2.png" target="new"><img src="img/hw/eloel2.png" class="uncategorized"></a>
+					<div class="fifty-fifty">
+						<div class="left">
+							<a href="img/hw/renderX3.png" target="new"><img src="img/hw/renderX3.png" class="uncategorized"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/rhythmX.png" target="new"><img src="img/hw/rhythmX.png" class="uncategorized"></a>
+						</div>
+					</div>
+					<div class="fifty-fifty phoneWallpaper">
+						<div class="left">
+							<div class="fifty-fifty">
+								<div class="left">
+									<a href="img/hw/wp1.png" target="new"><img src="img/hw/wp1.png" class="uncategorized"></a>
+								</div>
+								<div class="right">
+									<a href="img/hw/wp2.png" target="new"><img src="img/hw/wp2.png" class="uncategorized"></a>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<div class="fifty-fifty">
+								<div class="left">
+									<a href="img/hw/demionA.png" target="new"><img src="img/hw/demionA.png" class="uncategorized"></a>
+								</div>
+								<div class="right">
+									<a href="img/hw/demionB.png" target="new"><img src="img/hw/demionB.png" class="uncategorized"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fifty-fifty otherOne">
+						<div class="left">
+							<a href="img/hw/morningStroll.png" target="new"><img src="img/hw/morningStroll.png" class="uncategorized bottom-margin"></a>
+							<a href="img/hw/kingtoonz.png" target="new"><img src="img/hw/kingtoonz.png" class="uncategorized bottom-margin"></a>
+						</div>
+						<div class="right">
+							<a href="img/hw/me.png" target="new"><img src="img/hw/me.png" class="uncategorized">
+						</div>
+					</div>
+					<br>	
+					<a href="img/hw/horoglore.png" target="new"><img src="img/hw/horoglore.png" class="uncategorized central eighty"></a>
+				</div>
+				<br>
+				<div class="hobbiesHead">
+					<img src="img/hide.png" id="showIcon" onclick="hideShow(this, 'musicContent', 'hobbies', 4)">
+					<img src="img/headMusic.png" id="headerMusic">
+					<span class="gold" id="logoHover"></span>
+				</div>
+				<div class="musicContent">
+					<div class="thirty-seventy">
+						<div class="left">
+							<h3 class="gold musicTitle">Rhapsody Rumor</h3>
+						</div>
+						<div class="right">
+							<audio controls class="music">
+								<source src="audio/rhapsody_rumor.mp3" type="audio/ogg">
+							</audio>
+						</div>
+					</div>
+					<div class="thirty-seventy">
+						<div class="left">
+							<h3 class="gold musicTitle">Helestic Anthem</h3>
+						</div>
+						<div class="right">
+							<audio controls class="music">
+								<source src="audio/helestic_anthem.mp3" type="audio/ogg">
+							</audio>
+						</div>
+					</div>
+					<div class="musicSheets">
+						<a href="audio/sheet_helestic_anthem.pdf" target="new">
+					    	<img src="img/musicSheet.png" class="musicIcon">
+					    	<h3 class="white sheetTitle">Helestic Anthem</h3>
+						</a>
+					</div>
+					<div class="musicSheets">
+						<a href="audio/sheet_oathkeeper.pdf" target="new">
+					    	<img src="img/musicSheet.png" class="musicIcon">
+					    	<h3 class="white sheetTitle">Oathkeeper</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACTS SEGMENT -->
+		<section class="contacts" id="contacts">
+			<div class="showcaseFocus">
+				<img src="img/contacts.png" id="worksIcon" class="icon">
+				<span class="header gold">Contacts</span>
+			</div>
+			<div class="navigation-icons">
+				<div class="labelDisplay">
+					<span class="labelHover black" id="labelHover">▼ More Over Here ▼</span>
+				</div>
+				<div class="showcaseHolder">
+					<div class="showcase">
+						<img src="img/skills.png" class="icon" id="scSkills" onmouseover="changeLabel('Skills')" onmouseout="resetLabel()" onClick="skillsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/credentials.png" class="icon" id="scCredentials" onmouseover="changeLabel('Credentials')" onmouseout="resetLabel()" onClick="credentialsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/work.png" class="icon" id="scWorks" onmouseover="changeLabel('Past Works')" onmouseout="resetLabel()" onClick="worksOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/hobby.png" class="icon" id="scHobbies" onmouseover="changeLabel('Hobby Works')" onmouseout="resetLabel()" onClick="hobbiesOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/personalInfo.png" class="icon" id="scPersonalInfo" onmouseover="changeLabel('Personal Information')" onmouseout="resetLabel()" onClick="personalInfoOpen()"><br>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="fifty-fifty">
+					<div class="left">
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/mail1.png" class="contactsIcon pad-enough">
+							</div>
+							<div class="right">
+								<span class="plainText gmail">linggabangideon@gmail.com</span>
+							</div>
+						</div>
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/linkedIn.png" class="contactsIcon pad-enough">
+							</div>
+							<div class="right">
+								<a href="https://www.linkedin.com/in/gideon-linggaban-887680193/" class="plainText">Gideon Linggaban</a>
+							</div>
+						</div>
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/facebook1.png" class="contactsIcon pad-enough">
+							</div>
+							<div class="right">
+								<a href="https://wwww.facebook.com/gideon.linggaban" class="plainText">Gideon Linggaban </a>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/phone1.png" class="contactsIcon">
+							</div>
+							<div class="right">
+								<span class="plainText">+639662642319</span>
+							</div>
+						</div>
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/landline2.png" class="contactsIcon">
+							</div>
+							<div class="right">
+								<span class="plainText">661-7397</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PERSONAL INFORMATION SEGMENT -->
+		<section class="personalInfo" id="personalInfo">
+			<div class="showcaseFocus">
+				<img src="img/personalInfo.png" id="skillsIcon" class="icon">
+				<span class="header gold">Personal Information</span>
+			</div>
+			<div class="navigation-icons">
+				<div class="labelDisplay">
+					<span class="labelHover black" id="labelHover">▼ More Over Here ▼</span>
+				</div>
+				<div class="showcaseHolder">
+					<div class="showcase">
+						<img src="img/skills.png" class="icon" id="scSkills" onmouseover="changeLabel('Skills')" onmouseout="resetLabel()" onClick="skillsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/credentials.png" class="icon" id="scCredentials" onmouseover="changeLabel('Credentials')" onmouseout="resetLabel()" onClick="credentialsOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/work.png" class="icon" id="scWorks" onmouseover="changeLabel('Past Works')" onmouseout="resetLabel()" onClick="worksOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/hobby.png" class="icon" id="scHobbies" onmouseover="changeLabel('Hobby Works')" onmouseout="resetLabel()" onClick="hobbiesOpen()"><br>
+					</div>
+					<div class="showcase">
+						<img src="img/contacts.png" class="icon" id="scContacts" onmouseover="changeLabel('Contacts')" onmouseout="resetLabel()" onClick="contactsOpen()"><br>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="fifty-fifty">
+					<div class="left">
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/bday.png" class="iconInfo central">
+							</div>
+							<div class="right">
+								<img src="img/headBDay.png" class="headInfo">
+								<span class="information">November 19, 1998</span>
+							</div>
+						</div>
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/height.png" class="iconInfo  central lengthy">
+							</div>
+							<div class="right">
+								<img src="img/headHeight.png" class="headInfo">
+								<span class="information">5'55"</span>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/age.png" class="iconInfo central">
+							</div>
+							<div class="right">
+								<img src="img/headAge.png" class="headInfo">
+								<span class="information">21 years old</span>
+							</div>
+						</div>
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/weight.png" class="iconInfo central">
+							</div>
+							<div class="right">
+								<img src="img/headWeight.png" class="headInfo">
+								<span class="information">75kg</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ten-ninety">
+					<div class="left">
+						<img src="img/address.png" class="iconInfo central">
+					</div>
+					<div class="right">
+						<img src="img/headAddress.png" class="headInfo">
+						<span class="information">#185 Purok 27, San Carlos Heights, Upper Irisan, Baguio City, Benguet, Philippines</span>
+					</div>
+				</div>
+				<div class="ten-ninety">
+					<div class="left">
+						<img src="img/church.png" class="iconInfo central">
+					</div>
+					<div class="right">
+						<img src="img/headChurch.png" class="headInfo">
+						<span class="information">Baptist</span>
+						<span class="information">Metropolitan Bible Baptist Ekklesia San Carlos Heights</span>
+					</div>
+				</div>
+				<div class="ten-ninety pad-low">
+					<div class="left">
+						<img src="img/hobbies.png" class="iconInfo central">
+					</div>
+					<div class="right">
+						<img src="img/headHobbies.png" class="headInfo">
+						<span class="information">Traditional Drawing</span>
+						<span class="information">Digital Drawing</span>
+						<span class="information">Creative Writing</span>
+						<span class="information">Playing Games</span>
+						<span class="information">Conceptualizing / World Building</span>
+						<span class="information">Singing</span>
+						<span class="information">Playing the Piano</span>
+						<span class="information">Working Out</span>
+						<span class="information">Walking and Jogging</span>
+						<span class="information">Watching Anime</span>
+						<span class="information">Reading Manga</span>
+					</div>
+				</div>
+				<div class="fifty-fifty">
+					<div class="left">
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/softSkills.png" class="iconInfo central">
+							</div>
+							<div class="right">
+								<img src="img/headOtherSkills.png" class="headInfo">
+								<span class="information">Song Writing</span>
+								<span class="information">Script Writing</span>
+								<span class="information">Poetry</span>
+								<span class="information">Debate</span>
+								<span class="information">Massage</span>
+								<span class="information">Hand Crafting</span>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="thirty-seventy">
+							<div class="left">
+								<img src="img/personality.png" class="iconInfo central">
+							</div>
+							<div class="right">
+								<img src="img/headPersonality.png" class="headInfo">
+								<span class="information">Fair</span>
+								<span class="information">Honest</span>
+								<span class="information">Friendly</span>
+								<span class="information">Introverted</span>
+								<span class="information">Sensitive of other's feelings</span>
+								<span class="information">Observant</span>
+								<span class="information">Responsible</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<br><br>
+	</body>
+	<footer id="footer">
+		<img src="img/upArrow.png" id="toTop" onClick="backToChoices()" title="Go back up to 'Interested?'">
+		<div class="white-line"> </div>
+		<div class="circles">
+			<img src="img/footerCircle0.png" id="footerCircle">
+			<img src="img/skills.png" id="footerSkills" class="footerIcon" onmouseover="changeFooter('Skills')" onmouseout="resetFooter()" onClick="skillsOpen()">
+			<img src="img/credentials.png" id="footerCredentials" class="footerIcon" onmouseover="changeFooter('Credentials')" onmouseout="resetFooter()" onClick="credentialsOpen()">
+			<img src="img/work.png" id="footerWorks" class="footerIcon" onmouseover="changeFooter('Past Works')" onmouseout="resetFooter()" onClick="worksOpen()">
+			<img src="img/hobby.png" id="footerHobbies" class="footerIcon" onmouseover="changeFooter('Hobby Works')" onmouseout="resetFooter()" onClick="hobbiesOpen()">
+			<img src="img/contacts.png" id="footerContacts" class="footerIcon" onmouseover="changeFooter('Contacts')" onmouseout="resetFooter()" onClick="contactsOpen()">
+			<img src="img/personalInfo.png" id="footerPersonalInfo" class="footerIcon" onmouseover="changeFooter('Personal Information')" onmouseout="resetFooter()" onClick="personalInfoOpen()">
+		</div>
+		<div class="footerLabel-container" id="footerLabelContainer">
+			<span class="footerLabel gold" id="footerLabel"></span>
+		</div>
+		<br>
+		
+	</footer>
+
+	<script src="observer.js"></script>
+</html>

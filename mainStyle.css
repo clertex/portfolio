@@ -1,0 +1,1717 @@
+@font-face{ font-family: 'acumin';
+				src:  url('fonts/acumin-regular.otf');
+ }
+@font-face{ font-family: 'agency';
+				src:  url('fonts/agency.ttf');
+ }
+@font-face{ font-family: 'century-gothic';
+				src:  url('fonts/century-gothic.ttf');
+ }
+@font-face{ font-family: 'hnkani';
+				src:  url('fonts/hnkani.ttf');
+ }
+
+ /* --------- ANIMATION ------------- */
+@keyframes iconHighlight{
+	0%{
+		-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+	}
+	100%{
+		-webkit-filter: drop-shadow(0px 0px 10px rgba(40,96,202,0.5));
+	}
+}
+@keyframes iconSlideShut{
+	0%{
+		opacity: 1;
+		height: auto;
+		position: relative;
+		left: -190px;
+	}
+	100%{
+		opacity: 0;
+		height: 0;
+		position: relative;
+		left: -250px;
+	}
+}
+@keyframes highlight{
+	0%{
+		-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+	}
+	50%{
+		-webkit-filter: drop-shadow(0px 0px 10px rgba(40,96,202,0.5));
+	}
+	100%{
+		-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+	}
+}
+@keyframes twirl{
+	0%{
+		-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+		transform: rotate(0deg) scale(1.0);
+	}
+	50%{
+		-webkit-filter: drop-shadow(0px 0px 10px rgba(40,96,202,0.5));
+		transform: rotate(180deg) scale(2.0);
+	}
+	100%{
+		-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+		transform: rotate(360deg) scale(1.0);
+	}
+}
+/* --------- ANIMATED ELEMENTS------------- */
+.profile-name, .profile-image, .line1, .line2, .line3, #me, #interested, .ten-ninety > .left, .ten-ninety > .right, 
+#choicesFluid.main, .choiceIcon, #choicesFluid.less600, .showcaseFocus .header, .logo, .contactsIcon, .plainText, #personalInfo .fifty-fifty, #personalInfo .fifty-fifty > .left,
+#personalInfo .fifty-fifty > .right, #personalInfo .fifty-fifty > .left > .thirty-seventy, 
+#personalInfo .fifty-fifty > .left > .thirty-seventy > .left, 
+#personalInfo .fifty-fifty > .left > .thirty-seventy > .right,
+#personalInfo .fifty-fifty > .right > .thirty-seventy, .downloadResume1, .downloadResume2, #download, .divide, .resume
+#personalInfo .fifty-fifty > .right > .thirty-seventy > .left, #monopolyBoard,
+#personalInfo .fifty-fifty > .right > .thirty-seventy > .right, .footerIcon, #toTop, .ten-ninety .left
+{
+	transition: all .5s ease-in-out;
+}
+.choiceLabel, .showcase, .icon{
+	transition: all .2s linear;
+}
+.skills, .credentials, .works, .hobbies, .contacts, .personalInfo, .objectives{
+	transition: visibility 0s, opacity 0.5s linear;
+}
+/* --------- COLORS ------------- */
+.blue{
+	color: #2860ca;
+}
+.black{
+	color: #212121;
+}
+.gold{
+	color: #e0b250;
+}
+
+ /* --------- MAIN POSITIONING CLASSES ------------- */
+.fifty-fifty{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: 1%;
+}
+.fifty-fifty > .left{
+ 	flex: 1 1 48%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.fifty-fifty > .right{
+	flex: 1 1 48%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.sixty-fourty{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 3%;
+}
+.sixty-fourty > .left{
+	flex: 1 1 58.15%;
+	margin-right: 1%;
+}
+.sixty-fourty > .right{
+	flex: 1 1 40.85%;
+}
+.fiftyfive-fourtyfive{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+}
+.fiftyfive-fourtyfive > .left{
+	flex: 1 1 50%;
+	margin-right: 1.25%;
+}
+.fiftyfive-fourtyfive > .right{
+	flex: 1 1 46.8%;
+}
+.thirty-thirty-thirty{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: 2%;
+}
+.thirty-thirty-thirty .left{
+ 	flex: 1 1 32%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.thirty-thirty-thirty .right{
+	flex: 1 1 32%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.thirty-thirty-thirty .middle{
+	flex: 1 1 32%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.thirty-seventy{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2%;
+}
+.thirty-seventy .left{
+	flex: 1 1 20%;
+	margin-right: 2%;
+}
+.thirty-seventy .right{
+	flex: 1 1 78%;
+	padding-top: 5%;
+}
+.soloContainer{
+	width: 100%;
+	margin-top: 1.5%;
+}
+.soloContent{
+	width: 50%;
+}
+.ten-ninety{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2%;
+	margin-left: 0%;
+}
+.ten-ninety > .left{
+	flex: 1 1 8%;
+	margin-right: .5%;
+}
+.ten-ninety > .right{
+	flex: 1 1 86%;
+	padding-top: 5%;
+}
+ /* --------- SCROLL BAR ------------- */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  background: #2860ca;
+  border-radius: 10px;`
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e0b250;
+}
+
+/* --------- PROJECTOR MAIN ------------- */
+#projectorIMG{
+	width: 100%;
+}
+
+/* --------- MAIN ------------- */
+html{
+	scroll-behavior: smooth;
+}
+#body-override{
+	background-color: #212121;
+	color: white;
+	font-family: "Century Gothic";
+}
+#body-override nav{
+	background: rgba(18, 18, 18, 0.85);
+}
+/* --------- BANNER MAIN ------------- */
+#download{
+	width: 50px;
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	z-index: 2;
+}
+.download{
+	width: 100%;
+	height: 62px;
+	margin-bottom: -62px;
+	overflow: hidden;
+}
+.download:hover .downloadResume1{
+	transform: translateX(-90px) translateY(20px);
+	opacity: 1;
+}
+.download:hover .downloadResume2{
+	transform: translateX(32px) translateY(20px) ;
+	opacity: 1;
+}
+.downloadResume1{
+	float: right;
+	transform: translateX(110px) translateY(20px);
+	z-index: 1;
+	opacity: 0;
+}
+.downloadResume2{
+	float: right;
+	transform: translateX(32px) translateY(-20px);
+	opacity: 0;
+}
+#banner-container{
+	background-image: url("img/hw/renderX4.png");
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+}
+.banner{
+	padding-top: 20%;
+}
+.profile-name{
+	float: left;
+	font-family: 'acumin';
+}
+.line1{
+	font-size: 90px;
+	margin-top: 5%;
+}
+.line2{
+	font-size: 110px;
+	color: #212121;
+	margin-top: -11%;
+}
+.line3{
+	font-size: 50px;
+	color: #212121;
+	float: left;
+	margin-top: -11%;
+}
+.profile-image{
+	float: left;
+	margin-right: 0.75%;
+}
+#me{
+	width: 300px;
+	height:  300px;
+}
+/* --------- INTRO MAIN ------------- */
+#introduction-container{
+	width: 100%;
+	margin-top: 2%;
+	/*background-color: red;*/
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.intro-head{
+	font-family: "agency";
+	font-size: 3em;
+	background-color: #e0b250;
+	padding: 2px;
+}
+.intro-description{
+	font-family: "century-gothic";
+	font-size: 1.3em;
+	padding-left: 4%;
+}
+#interested{
+	font-family: "hnkani";
+	font-size: 4em;
+}
+.clickTheFollowing{
+	font-family: "century-gothic";
+	font-size: 1.5em;
+	padding-left: 6%;
+}
+/* --------- INITIAL CHOICES MAIN ------------- */
+#initialChoices-container{
+	font-family: "agency";
+	width: 100%;
+	padding-left: 2%;
+	display: block;
+	/*display: none; */
+	/*^ TEMPORARY ^*/
+}
+.choices{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	display: inline-block;
+	width: 130px;	
+}
+#choicesFluid.main{
+	width: 90%;
+	display: flex;
+	padding: 0;
+	margin-left: 5%;
+	justify-content: center;
+}
+.choiceIcon{
+	width: 100%;
+	height: 70%;
+}
+.choiceLabel{
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 5px;
+	pointer-events: none;
+	opacity: 0.5;
+	transform: translateY(0px);
+}
+
+.choices:hover img{
+	animation: imgHighlight .30s ease-in-out both;
+}
+.choices:hover .choiceLabel{
+	opacity: 1;
+	transform: translateY(8px);
+}
+
+@keyframes imgHighlight{
+	0%{
+		-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+	}
+	100%{
+		-webkit-filter: drop-shadow(0px 0px 10px rgba(40,96,202,0.5));
+		transform: translateY(8px);
+	}
+}
+#choicesFluid.less600{
+	display: none;
+	opacity: 0;
+}
+
+/* --------- SKILLS MAIN ------------- */
+.skills{
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	
+}
+/* ======== SHOWCASE ========== */
+.showcaseFocus{
+	padding-top: 2%;
+	padding-bottom: 5px;
+	flex: 1 1 23%;
+}
+.showcase{
+	flex: 1 1 75%;
+}
+.showcaseFocus > .icon{
+	width: 130px;
+	height: 130px;
+	transform: translateY(0px);
+}
+.showcaseFocus .header{
+	font-family: "agency";
+	font-size: 2.8em;
+	padding-left: 10px;
+	opacity: 1;
+}
+.labelDisplay{
+	background-color: #e0b250;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3px;
+}
+.labelDisplay > span{
+	font-family: "acumin";
+	font-size: 1.2em;
+	padding: 2px 2px 2px 2px;
+}
+.showcase{
+	display: inline-block;
+}
+.showcase .showcaseLabel{
+	text-align: center;
+}
+.showcase .icon{
+	width: 80px;
+	height: 80px;
+	margin-top: 25px;
+}
+.showcase:hover .icon{
+	animation: iconHighlight .30s ease-in-out both;
+	transform: translateY(8px);
+}
+
+/* ======== SKILLS ========== */
+.skills .content{
+	margin-top: 3%;
+	margin-left: -5%;
+	margin-right: -5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.skills li{
+	font-size: 1.2em;
+}
+.flag{
+	margin-bottom: 3%;
+}
+#skills > .content > .fifty-fifty > .right > .flag{
+	float: right;
+	margin-right: -8%;
+}
+#skills > .content > .fifty-fifty > .right > ul{
+	margin-top: 10%;
+}
+.objectives{
+	width: 100%;
+	overflow: hidden;
+	height: 1;
+	opacity: 1;
+}
+.twenty-eighty{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2%;
+}
+.twenty-eighty .left{
+	flex: 1 1 15%;
+}
+.twenty-eighty .right{
+	background-color: #2860ca;
+	flex: 1 1 85%;
+	padding-top: 1%;
+}
+.twenty-eighty .objectivesIcon{
+	width: 100%;
+	height: 100%;
+}
+.objectivesless700{
+	height: 0;
+	opacity: 0;
+}
+/* --------- CREDENTIALS MAIN ------------- */
+.credentials{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.credentials .content{
+	width: 100%;
+	padding-top: 3%;
+}
+.workContent, .educationContent, .seminarContent, .referenceContent{
+	height: 0;
+	opacity: 0;
+	display: none;
+}
+#showIcon{
+	width: 35px;
+	cursor: pointer;
+}
+.collapsible{
+	overflow: hidden;
+	height: auto;
+}
+.credentials .content > div{
+	margin-top: 25px;
+}
+.credentialHead{
+	margin-left: -5%;
+}
+.workContent{
+	width: 100%;
+	padding-top: 10px;
+	/*display: flex;*/
+	flex-wrap: wrap;
+}
+.workContent img{
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+.credentials .content ul{
+	padding-top: 15px;
+}
+.credentials .content li {
+	font-size: 1.2em;
+}
+#ub, #uc, #pms{
+	width: 100%;
+}
+#pms{
+	padding-bottom: 12%;
+}
+#ub{
+	margin-top: 12%;
+}
+#credentials .ten-ninety{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2%;
+	margin-left: 2.5%;
+}
+#credentials .ten-ninety > .left{
+	flex: 1 1 10%;
+	margin-right: 3%;
+}
+#credentials .ten-ninety > .right{
+	flex: 1 1 83%;
+	width: 100%;
+	padding-top: 1%;
+}
+#credentials .ten-ninety > .right > .fifty-fifty > .right{
+	padding-top: 0%;
+}
+#credentials .fifty-fifty{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+#credentials .fifty-fifty > .left{
+	flex: 1 1 43%;
+}
+#credentials .fifty-fifty > .right{
+	flex: 1 1 43%;
+	padding-right: 5%;
+}
+.centricContain{
+	width: 100%;
+}
+.universityHeader{
+	background-color: #2860ca;
+	margin-top: 20px;
+	margin-left: 0px;
+	padding: 10px 10px 10px 10px;
+}
+.secondary-primary{
+	margin-top: 2%;
+}
+.seminarContent{
+	margin-left: 5%;
+}
+.referenceContent{
+	padding-top: 1%	;
+}
+.character{
+	padding: 20px 10px 10px 4%;
+	display: flex;
+	width: 100%;
+}
+.teacher{
+	width: 160px;
+	height: 160px;
+}
+.character ul{
+	flex: 1 1 70%;
+}
+/* --------- PAST WORKS MAIN ------------- */
+.works{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.works .content{
+	margin-top: 2%;
+	width: 100%;
+}
+.logosContent, .webDesignContent, .prototypingContent, .gameDesignContent, .applicationDesignContent, 
+.otherGraphicsContent, .videosContent{
+	height: 0;
+	opacity: 0;
+	display: none;
+}
+.worksHead{
+	margin-left: -5%;
+}
+.logosContente, .deedsContent, .cardsContent, .moneyContent{
+	padding-top: 2%;
+	overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 120%;
+  margin-left: -10%;
+  padding-bottom: 2%;
+}
+.moneyContent .m1{
+	background-color: white;
+}
+.moneyContent .m5{
+	background-color: #C69054;
+}
+.moneyContent .m10{
+	background-color: #D17878;
+}
+.moneyContent .m20{
+	background-color: #94AC96;
+}
+.moneyContent .m50{
+	background-color: #9680DB;
+}
+.moneyContent .m100{
+	background-color: #73C654;
+}
+.moneyContent .m200{
+	background-color: #D1BE67;
+}
+.moneyContent .m500{
+	background-color:  #5A8BB4;
+}
+.logo{
+	width: 170px;
+	height: auto;
+	display: inline-block;
+	transition-delay: .75s;
+}
+.cardsContent .logo, .moneyContent .logo{
+	width: 250px;
+}
+.imgDisplayer{
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	opacity: 0;
+	height: 0;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	transition: opacity .3s linear;
+	z-index: 5;
+}
+#imageProjector{
+	display: block;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: auto;
+}
+#logoHover{
+	font-size: 2em;
+	font-family: "agency";
+}
+.logoList{
+	width: 110%;
+	margin: 2% -5% 2%;
+}
+.webDesignContent{
+	width: 100%;
+}
+.webHolder{
+	width: 100%;
+	margin-top: 2%;
+}
+.webHolder span{
+	font-size: 2em;
+}
+.carousel-indicators{
+	gap: 25px;
+}
+.carousel .carousel-indicators li.active{
+	background-color: #e0b250;
+	border: none;
+}
+.webSolo{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.title{
+	font-size: 2em;
+}
+.helmetSolos{
+	widows: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.helmetSolos .left{
+	flex: 1 1 59.25%;
+	margin-right: 2%;
+}
+.helmetSolos .right{
+	flex: 1 1 35%;
+}
+.helmetSolosInner, .spartaHelmet1, .spartaHelmet2, .spartaHelmet3{
+	width: 100%;
+}
+.helmetCarousels{
+	display: flex;
+	width: 100%;
+}
+#sparta1, #sparta2{
+	margin-left: 2%;
+	margin-right: 2$;
+} 
+#sparta1 {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0)) !important;
+	background: rgba(0, 0, 0, 0);
+	-moz-box-shadow: none;
+-goog-ms-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.carousel-indicators.helmet{
+	transform: rotate(0deg) translateX(0%) translateY(30px);
+	gap: 25px;
+}
+.chandelgroundContainer, .applicationsContainer{
+	width: 100%;
+	display: flex;
+}
+#nector{
+	margin-right: 2%;
+}
+#shapeOfHue .carousel-inner .item img, #nector .carousel-inner .item img, #greenLog .carousel-inner .item img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.monopolyContainer{
+	position: relative;
+	width: 100%;
+}
+.monopoly{
+	width: 100%;
+	z-index: 1;
+}
+#flip{
+	width: 85px;
+	position: absolute;
+	left: 46.2%;
+	top: 46.5%;
+	z-index: 2;
+	animation: highlight 3s infinite;
+}
+#flip:hover{
+	animation: twirl 1s ease-in-out infinite;
+}
+.first-row .centric{
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.badgesContainer{
+	width: 100%;
+}
+.badgeDiv{
+	width: 17%;
+	margin: 1% 1%;
+	display: inline-block;
+}
+.badges{
+	width: 100%;
+}
+.hsGrad, .bdayFrames, .certificates{
+	display: flex;
+	width: 100%;
+}
+.hsGrad .left, .bdayFrames .left{
+	flex: 1 1 47%;
+	display: inline-block;
+	margin-right: 5px;
+}
+.hsGrad .right, .bdayFrames .right{
+	flex: 1 1 47%;
+}
+.hsGrad img{
+	width: 100%;
+	margin: 5px 5px;
+}
+.bdayFrames{
+	display: flex;
+}
+.bdayFrames .left{
+	width: 48%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.bdayFrames .right{
+	width: 48%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+
+	overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.r-row{
+	display: inline-block;
+}
+.bdayBreak{
+	display: block;
+}
+.iconic{
+	display: inline-block;
+	width: 23%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.bdayFrameImg{
+	width: 100%;
+}
+.certificates .left, .certificates .right{
+	flex: 1 1 50%;
+	margin: 5px 5px 5px 5px;
+}
+.certificates img{
+	width: 100%;
+}
+.otherGraphics{
+	width: 100%;
+	margin-bottom: 2%;
+}
+.videoSize{
+	width: 100%;
+	height: 315px;
+	margin-bottom: 5px;
+}
+/* --------- 	HOBBY WORKS MAIN ------------- */
+.hobbies{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.hobbies .content{
+	margin-top: 2%;
+	width: 100%;
+}
+.worldBuildingContent, .characterSheetsContent, .fanArtContent, .uncategorizedContent, .musicContent{
+	height: 0;
+	opacity: 0;
+	display: none;
+}
+.hobbiesHead{
+	margin-left: -5%;
+	margin-bottom: 1.5%;
+}
+.worldBuildingContent{
+	width: 100%;
+}
+.central{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mapa{
+	width: 100%;
+}
+.render{
+	width: 100%;
+}
+.carousel-indicators.characterSheet{
+	transform: rotate(0deg) translateX(-75%) translateY(50px);
+	z-index: 2;
+	gap: 5px;
+}
+.carousel .renderal{
+	height: 100%;
+}
+.render .a1{
+	background-color: yellow;
+	margin-top: -10%;
+}
+.fanArtContent{
+	width: 100%;
+	flex-wrap: wrap;
+	padding-bottom: 5%;
+}
+.fanArtContent .left{
+	flex: 1 1 40%;
+	margin-right: 2%;
+}
+.fanArtContent .right{
+	flex: 1 1 58%;
+}
+.fanArtContent .paladins{
+	width: 100%;
+	margin-bottom: 2%;
+}
+.talus{
+	margin-top: 5%;
+}
+.uncategorized{
+	width: 100%;
+}
+.thirty-thirty-thirty .uncategorized{
+	margin-bottom: 3%;
+}
+.bottom-margin{
+	margin-bottom: 2%;
+}
+.eighty{
+	width: 80%;
+}
+.musicContent{
+	width: 100%;
+}
+.musicContent .right{
+	padding-top: 0%;
+}
+.musicTitle{
+	text-align: right;
+}
+.music{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: -40px;
+}
+.musicSheets{
+	width: 310px;
+	height: 100px;
+	padding: 0% 2% 1% 2%;
+	display: inline-block;
+}
+.musicIcon{
+	width: 50px;
+	display:  inline-block;
+}
+.sheetTitle{
+	background: #2860ca;
+	display: inline-block;
+	margin-left: 2%;
+	padding: 2.5% 2% 2.5% 2%;
+	color: white;
+}
+/* --------- CONTACTS MAIN ------------- */
+.contacts{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.contactsIcon{
+	width: 100%;
+	transition-delay: 0.75s;
+}
+.plainText{
+	font-size: 1.5em;
+	transition-delay: 0.75s;
+}
+#contacts .content, #contacts .fifty-fifty{
+	width: 100%;
+}
+#contacts .fifty-fifty > .left, #contacts .fifty-fifty > .right{
+	flex: 1 1 48%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.pad-enough{
+	padding-top: 12%;
+}
+
+/* --------- PERSONAL INFORMATION MAIN ------------- */
+.personalInfo{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.iconInfo{
+	width: 100px;
+	height: 100px;
+}
+.lengthy{
+	width: 65px;
+	height: 100px;
+}
+.headInfo{
+	height: 50px;
+}
+#personalInfo .content{
+	width: 100%;
+}
+.headInfo{
+	display: block;
+	margin-top: -5%;
+}
+.information{
+	font-size: 1.5em;
+	display: block;
+}
+/* --------- FOOTER MAIN ------------- */
+#footer{
+	width: 100%;
+}
+.white-line{
+	background-color: white;
+	height: 10px;
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right:  auto;
+}
+.circles{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 10%;
+}
+#footerCircle{
+	float: left;
+	margin-left: 4%;
+	margin-top: -22px;
+}
+.footerIcon{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-top: -30px;
+	display: none;
+}
+.footerIcon:hover{
+	animation: imgHighlight .30s ease-in-out both;
+}
+.footerLabel-container{
+	display: none;
+	height: 15px;
+	margin-top: 10px;
+	text-align: center;
+}
+.footerLabel{
+	font-family: "century-gothic";
+	font-size: 1.2em;
+	text-align: center;
+}
+@keyframes imgHighlight{
+	0%{
+		-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+	}
+	100%{
+		-webkit-filter: drop-shadow(0px 0px 10px rgba(40,96,202,0.5));
+	}
+}
+#toTop{
+	position: fixed;
+	bottom: -50px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#toTop:hover	{
+	opacity: 1;
+}
+
+/* --------- PERSONAL INFO 1284 ------------- */
+@media only screen and (max-width: 1284px){
+.lengthy{
+	width: 100px;
+	height: 100px;
+}
+#personalInfo .fifty-fifty > .left > .thirty-seventy > .left, 
+#personalInfo .fifty-fifty > .right > .thirty-seventy > .left{
+	flex: 1 1 30%;
+}
+#personalInfo .fifty-fifty > .left > .thirty-seventy > .right,
+#personalInfo .fifty-fifty > .right > .thirty-seventy > .right{
+	flex: 1 1 68%;
+}
+}
+
+@media only screen and (max-width: 1284px){
+/* --------- PERSONAL INFO 1284 ------------- */
+.ten-ninety{
+	margin-left: 0%;
+}
+.ten-ninety .left{
+	flex: 1 1 11%;
+	margin-right: 2%;
+}
+.ten-ninety .right{
+	flex: 1 1 80.5%;
+	padding-top: 5%;
+}
+}
+
+/* --------- MAIN 1100 ------------- */
+@media only screen and (max-width: 1100px){
+.showcaseFocus .header{
+	font-size: 2.1em;
+}
+/* --------- WORKS 1100 ------------- */
+#flip{
+	left: 45%;
+	top: 45%;
+}
+}
+
+/* --------- BANNER 1000 ------------- */
+@media only screen and (max-width: 1000px){
+.banner{
+	padding-top: 20%;
+}
+.line1{
+	font-size: 50px;
+	margin-top: 15%;
+}
+.line2{
+	font-size: 60px;
+	color: #212121;
+	margin-top: -12%;
+}
+.line3{
+	font-size: 20px;
+	color: #212121;
+	float: left;
+	margin-top: -10%;
+}
+#me{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 2%;
+}
+.choiceIcon{
+	height: 50%;
+}
+/* --------- SKILLS 1000 ------------- */
+.showcaseFocus .header{
+	opacity: 0;
+}
+/* --------- CREDENTIALS 1000 ------------- */
+#credentials .ten-ninety > .left{
+	flex: 1 1 20%;
+	margin-right: 3%;
+}
+#credentials .ten-ninety > .right{
+	flex: 1 1 77%;
+	width: 100%;
+	padding-top: 1%;
+}
+/* --------- CONTACTS 1000 ------------- */
+.gmail{
+	font-size: 1.3em;
+}
+}
+
+/* --------- PERSONAL INFO 925 ------------- */
+@media only screen and (max-width: 925px){
+.ten-ninety{
+	margin-left: 0%;
+}
+.ten-ninety .left{
+	flex: 1 1 11%;
+	margin-right: 2%;
+}
+.ten-ninety .right{
+	flex: 1 1 80.5%;
+	padding-top: 5%;
+}
+}
+
+/* --------- MAIN 880 ------------- */
+@media only screen and (max-width: 880px){
+#works #showIcon, #hobbies #showIcon{
+	margin-right: 2%;
+}
+/* --------- WORKS 880 ------------- */
+#flip{
+	left: 44%;
+	top: 45%;
+}
+/* --------- CONTACTS 880 ------------- */
+.gmail{
+	font-size: 1.1em;
+}
+}
+
+/* --------- MAIN 850 ------------- */
+@media only screen and (max-width: 850px){
+.twenty-eighty .left{
+	flex: 1 1 25%;
+}
+.twenty-eighty .right{
+	background-color: #2860ca;
+	flex: 1 1 75%;
+	padding-top: 1%;
+}
+/* --------- CREDENTIALS 850 ------------- */
+#credentials .ten-ninety > .left{
+	flex: 1 1 25%;
+	margin-right: 3%;
+}
+#credentials .ten-ninety > .right{
+	flex: 1 1 72%;
+	width: 100%;
+	padding-top: 1%;
+}
+/* --------- PERSONAL INFO 850 ------------- */
+#personalInfo .fifty-fifty{
+	display: block;
+}
+/* --------- PERSONAL INFO 880 ------------- */
+.ten-ninety{
+	margin-left: 5%;
+}
+.ten-ninety .left{
+	flex: 1 1 15%;
+	margin-right: 8%;
+}
+.ten-ninety .right{
+	flex: 1 1 70.5%;
+	padding-top: 5%;
+}
+}
+
+/* --------- HOBBIES 765 ------------- */
+@media only screen and (max-width: 765px){
+#galvarosA .carousel-indicators.characterSheet, #galvarosB .carousel-indicators.characterSheet{
+	transform: rotate(0deg) translateX(-75%) translateY(35px);
+	z-index: 2;
+	gap: 5px;
+}
+/* --------- WORKS 765 ------------- */
+#flip{
+	left: 43%;
+	top: 44%;
+}
+}
+
+/* --------- HOBBIES 745 ------------- */
+@media only screen and (max-width: 745px){
+#galvarosA .carousel-indicators.characterSheet, #galvarosB .carousel-indicators.characterSheet{
+	transform: rotate(0deg) translateX(-75%) translateY(37px);
+	z-index: 2;
+	gap: 5px;
+}
+}
+/* --------- HOBBIES 735 ------------- */
+@media only screen and (max-width: 735px){
+.musicContent .left{
+	flex: 1 1 25%;
+	margin-right: 2%;
+}
+.musicContent .right{
+	flex: 1 1 60%;
+}
+/* --------- CONTACTS 735 ------------- */
+#contacts > .fifty-fifty{
+	display: block;
+}
+.gmail{
+	font-size: 1.5em;
+}
+#contacts .pad-enough{
+	padding-top: 0%;
+}
+#contacts .thirty-seventy{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2%;
+}
+#contacts .thirty-seventy .left{
+	flex: 1 1 15%;
+	margin-right: 2%;
+}
+#contacts .thirty-seventy .right{
+	flex: 1 1 83%;
+	padding-top: 5%;
+}
+}
+
+@media only screen and (max-width: 700px){
+/* --------- SKILLS 700 ------------- */
+.showcaseFocus .header{
+	opacity: 1;
+	display: inline-block;
+	transform: translateX(10%);
+}
+.showcaseHolder{
+	display: flex;
+	justify-content: center;	
+	flex-wrap: wrap;
+	margin-bottom: 10%;
+}
+.showcase{
+	flex: 0 0 0%;
+}
+.objectives{
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+}
+.objectivesless700{
+	display: block;
+	overflow: hidden;
+	height: auto;
+	opacity: 1;
+	width: 100%;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+.objectivesless700 ul li{
+	padding-top: 10px;
+}
+.objectivesless700 ul{
+	background-color: #2860ca;
+	padding-bottom: 13px;
+	padding-right: 8px;
+}
+.objectivesHeader{
+	font-size: 2.5em;
+	font-family: agency;
+}
+.objectivesless700Icon{
+	width: 2.6em;
+	height: 2.6em;
+	margin-top: -23px;
+}
+/* --------- CREDENTIALS 700 ------------- */
+.credentials{
+	display: block;
+}
+.credentials .content{
+	padding-top: 0%;
+}
+/* --------- HOBBIES 700 ------------- */
+.sixty-fourty{
+	display: block;
+}
+.sixty-fourty > .left{
+	margin-right: 0%;
+	margin-bottom: 30px;
+}
+.sixty-fourty > .right{
+	margin-bottom: 30px;
+}
+#galvarosA .carousel-indicators.characterSheet, #galvarosB .carousel-indicators.characterSheet{
+	transform: rotate(0deg) translateX(-75%) translateY(40px);
+	z-index: 2;
+	gap: 5px;
+}
+}
+
+/* ======== SHOWCASE 660 ========== */
+@media only screen and (max-width: 660px){
+.navigation-icons{
+	width: 100%;
+}
+.showcaseFocus{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+}
+.showcaseHolder{
+	display: flex;
+	justify-content: center;	
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 10%;
+}
+.showcase{
+	margin-left: auto;
+	margin-right: auto;
+}
+/* --------- WORKS 660 ------------- */
+#flip{
+	left: 42%;
+	top: 43%;
+}
+/* --------- HOBBY 660 ------------- */
+#damba{
+	margin-bottom: 3.5%;
+}
+.soloContent{
+	width: 99%;
+}
+#oddieBell .carousel-indicators.characterSheet, #galvarosB .carousel-indicators.characterSheet{
+	transform: rotate(0deg) translateX(-65%) translateY(45px);
+	z-index: 2;
+	gap: 5px;
+}
+}
+
+@media only screen and (max-width: 600px){
+/* --------- BANNER 600 ------------- */
+.banner{
+	padding-top: 0%;
+	background-color: blue;
+}
+.line1{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 0%;
+}
+.line2{
+	text-align: center;
+	font-size: 45px;
+	color: #212121;
+	margin-top: -40px;
+}
+.line3{
+	text-align: center;
+	font-size: 20px;
+	color: #212121;
+	float: none;
+	margin-top: -37px;
+}
+#me{
+	width: 150px;
+	height:  150px;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+.profile-image{
+	float: none;
+	display: block;
+	width: 100%;
+}
+.profile-name{
+	float: none;
+	width: 100%;
+	display: inline-block;
+	font-family: 'acumin';
+}
+#interested{
+	font-size: 3em;
+}
+.showcase .icon{
+	width: 50px;
+	height: 50px;
+	margin-left: 1.5px;
+	margin-right: 1.5px;
+}
+.content{
+	padding-top: 10px;
+}
+/* --------- INITIAL CHOICES 600 ------------- */
+#choicesFluid.main{
+	opacity: 0;
+	display: none;
+}
+#choicesFluid.less600{
+	opacity: 100;
+	padding-left: 10%;
+	display: flex;
+	justify-items: space-between;
+}
+.choiceIcon{
+	width: 85%;
+	height: 40%;
+}
+.pad-low{
+	margin-bottom: 5%;
+}
+/* --------- CREDENTIALS 600 ------------- */
+#credentials #showIcon{
+	float: left;
+	margin-top: 2%;
+}
+/* --------- WORKS 600 ------------- */
+#credentials .ten-ninety > .right > .fifty-fifty{
+	display: block;
+}
+/* --------- HOBBIES 600 ------------- */
+#hobbies .fifty-fifty, #hobbies .fiftyfive-fourtyfive{
+	display: block;
+	margin: 0 0 0 0;
+}
+#hobbies .fifty-fifty img{
+	margin: 0.5% 0 0.5% 0;
+}
+.fiftyfive-fourtyfive .left{
+	margin-right: 0%;
+	margin-bottom: 1.5%;
+}
+.fanArtContent > .left, .fanArtContent > .right{
+	flex: 1 1 100%;
+}
+/* --------- WORKS 600 ------------- */
+.helmetCarousels, .chandelgroundContainer, .applicationsContainer, 
+.thirty-thirty-thirty, .hsGrad, .bdayFrames, .certificates, 
+.otherGraphicsContainer >.fifty-fifty, 
+.videosContent > .fifty-fifty{
+	display: block;
+}
+#sparta1, #sparta2{
+	margin-bottom: 5%;
+}
+.hsGrad .right{
+	margin-top: -2%;
+}
+.bdayFrames{
+	width: 100%;
+}
+.bdayFrames .left{
+	display: block;
+	margin-right: 0px;
+	width: 100%;
+}
+.bdayFrames .right{
+	width: 100%;
+	display: inline-block;
+}
+.r-row{
+	display: inline-block;
+	width: 100%;
+	margin-right: 73.5%;
+}
+.bdayBreak{
+	display: none;
+}
+}
+
+/* --------- CREDENTIALS 550 ------------- */
+@media only screen and (max-width: 550px){
+.character{
+	display: block;
+}
+.teacher{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* --------- WORKS 550 ------------- */
+#flip{
+	width: 80px;
+	left: 40.5%;
+	top: 42%;
+}
+}
+
+/* --------- MAIN 475 ------------- */
+@media only screen and (max-width: 475px){
+#skillsIcon{
+	display: none;
+}
+.header{
+	margin-left: -10%;
+}
+.showcaseFocus .header{
+	margin-left: 0%;
+}
+/* --------- CREDENTIALS 475 ------------- */
+.universityHeader{
+	font-size: 1.1em; 
+}
+/* --------- WORKS 475 ------------- */
+#works .gold{
+	font-size: 1.5em;
+}
+#headerLogos, #headerVideos{
+	width: 45%;
+}
+#headerApplication{
+	width: 50%;
+}
+#headerWebDesign, #headerPrototyping, #headerGameDesign, #headerOtherGraphics{
+	width: 60%;
+}
+.helmetSolos{
+	display: block;
+}
+.helmetSolos .left{
+	margin-right: 0%;
+}
+#flip{
+	width: 65px;
+	left: 41%;
+	top: 41.5%;
+}
+.badgeDiv{
+	width: 25%;
+	margin: 1% 2.2%;
+	display: inline-block;
+}
+/* --------- HOBBIES 475 ------------- */
+#headerWorldBuilding, #headerCharacterSheets, #headerPaladins, #headerUncategorized, #headerMusic{
+	width: 60%;
+}
+.musicContent .left{
+	flex: 1 1 100%;
+	margin-right: 0%;
+}
+.musicContent .right{
+	flex: 1 1 100%;
+}
+.musicTitle{
+	text-align: left;
+}
+.music{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* --------- CONTACTS 475 ------------- */
+#contacts .thirty-seventy{
+	width: 100%;
+	display: block;
+	border-bottom: 5px solid #e0b250;
+	margin-bottom: 5%;
+}
+#contacts .thirty-seventy > .left{
+	display: block;
+	margin-right: 0;
+}
+#contacts .thirty-seventy > .left img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contacts .thirty-seventy > .right{
+	display: block;
+	margin-right: 0;
+}
+#contacts .thirty-seventy > .right > .plainText{
+	text-align: center;
+	display: block;
+	font-size: 1.1em;
+}
+.contactsIcon{
+	width: 20%;
+}
+}
+
+
+@media only screen and (max-width: 420px){
+/* --------- PERSONAL INFO 420 ------------- */
+#personalInfo .fifty-fifty, #personalInfo .fifty-fifty .thirty-seventy, .ten-ninety{
+	display:  block;
+}
+#personalInfo .fifty-fifty > .left > .thirty-seventy > .left, 
+#personalInfo .fifty-fifty > .right > .thirty-seventy > .left,
+#personalInfo .ten-ninety .left{
+	animation: iconSlideShut 1s ease-in-out both;
+}
+.ten-ninety{
+	margin-left: 0%;
+}
+.ten-ninety .left{
+	opacity: 0;
+	height: 0;
+	margin-left: -50%;
+}
+#footerCircle{
+	width: 5%;
+}
+.footerIcon{
+	width: 30px;
+	height: 30px;
+	margin-top: -20px;
+}
+}
+/* --------- CREDENTIALS 365 ------------- */
+@media only screen and (max-width: 365px){
+#headerWorkExperience{
+	width: 80%;
+}
+#headerEducation, #headerSeminars, #headerCharacterReferences{
+	width: 60%;
+}
+}
+
+/* --------- MAIN 332 ------------- */
+@media only screen and (max-width: 332px){
+#interested{
+	font-size: 2.5em;
+}
+}
